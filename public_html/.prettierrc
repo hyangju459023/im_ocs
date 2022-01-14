@@ -1,0 +1,10 @@
+{
+    "singleQuote": true,
+    "quoteProps": "as-needed",
+    "arrowParens": "always",
+    "ignorePath": ".prettierignore",
+    "printWidth": 200,
+    "tabWidth": 4,
+    "useTabs": false,
+    "semi": true
+}

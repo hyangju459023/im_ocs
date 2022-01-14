@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>전 세계 온라인 콘텐츠 현황</title>
+        <script type="text/javascript" src="./scripts/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="./scripts/headroom/headroom.js"></script>
+        <script type="text/javascript" src="./scripts/headroom/headroom.min.js"></script>
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/font.css" />
+        <link rel="stylesheet" href="./css/nav.css" />
+    </head>
+    <body>
+        <header class="ac-nav-overlap headroom headroom--top headroom--not-bottom">
+            <nav id="ac-globalnav">
+                <div class="ac-gn-content">
+                    <a class="logo"><span>O</span>nline <span>C</span>ontents <span>S</span>tatus</a>
+                    <div id="menu-btn">
+                        <div class="ico-menu-inner"></div>
+                    </div>
+                    <div class="ac-gn-list">
+                        <ul class="ac-gn-inner">
+                            <li class="ac-gn-item ac-gn-item-menu"><a href="">구글 검색 결과</a></li>
+                            <li class="ac-gn-item ac-gn-item-menu">
+                                <span class="submenu-button"></span>
+                                <a href="">콘텐츠 현황</a>
+                                <ul class="sub-menu">
+                                    <li><a href="">웹사이트</a></li>
+                                    <li><a href="">유튜브</a></li>
+                                    <li><a href="">구글 비즈니스 프로필</a></li>
+                                    <li><a href="">SNS</a></li>
+                                    <li><a href="">국가 홈페이지</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <script>
+            window.addEventListener('DOMContentLoaded', () => {
+                //headroom
+                let Header = document.querySelector('header');
+                let headroom = new Headroom(Header, {
+                    offset: 35,
+                    tolerance: 5,
+                });
+                headroom.init();
+
+                // Mobile menu
+                document.querySelector('#menu-btn').addEventListener('click', (e) => {
+                    const mobileMenu = e.target.closest('div#menu-btn');
+                    mobileMenu.classList.toggle('menu-opened');
+                    document.querySelector('html').classList.toggle('open');
+
+                    if (mobileMenu.classList.contains('menu-opened')) {
+                        document.querySelector('.ac-gn-list').style.height = `${window.innerHeight - 50}px`;
+                    } else {
+                        document.querySelector('.ac-gn-list').style.height = 'auto';
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>

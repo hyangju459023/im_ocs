@@ -1,0 +1,73 @@
+/* 로그아웃 PC에서만 보이게 */
+.logo{padding-left:5%; width:100%; height:54px; display:flex; -webkit-display:flex; align-items:center; justify-content:start; -webkit-justify-content:start}
+
+@media(min-width:1070px){
+  .logo{width:auto; padding-left:0}
+}
+
+/* visual */
+.page-visual{text-align:center; min-height:240px; background:#11283E; display:flex; justify-content:center; align-items:center; color:#fff;}
+.page-visual > div{font-weight:600}
+.page-visual{position:relative}
+.page-visual::before{content:''; position:absolute; top:0; left:0; width:100%; height:100%; background-color:#131313; opacity:0.3}
+.page-visual .inner{z-index:1}
+.page-visual .inner div{margin-top:10px; font-weight:500;}
+.page-notice .page-visual{background:url(/images/visual-01.png) center no-repeat; background-size:cover}
+.page-faq .page-visual{background:url(/images/visual-06.png) center no-repeat; background-size:cover}
+.page-design .page-visual{background:url(/images/visual-07.png) center no-repeat; background-size:cover}
+/* .page-cs .page-visual{background:url(/images/visual-04@2x.png) center no-repeat; background-size:cover} */
+.page-dev .page-visual{background:url(/images/visual-10.jpg) center no-repeat; background-size:cover}
+.page-dev2 .page-visual{background:url(/images/visual-11.jpg) center no-repeat; background-size:cover}
+.page-service .page-visual{background:url(/images/visual-02.png) center no-repeat; background-size:cover}
+.page-service2 .page-visual{background:url(/images/visual-12.jpg) center no-repeat; background-size:cover}
+/* .page-server .page-visual{background:url(/images/visual-05.png) center no-repeat; background-size:cover} */
+.page-issue .page-visual{background:url(/images/visual-08.jpg) center no-repeat; background-size:cover}
+
+.page-visual .inner{padding-top:15px; padding-left:5%; padding-right:5%; vertical-align:middle;}
+/* .page-cs .page-visual::before{background-color:#04072B; opacity:0.3} */
+/* .main .page-visual::after{background:#11283E url(/images/m-visual-bg-right.png) no-repeat; opacity:1} */
+@media(max-width:413px){
+	.page-visual .inner p{font-size:14px;}
+	.page-visual .inner p br{display:none}
+}
+@media(min-width:600px){
+	.page-visual .inner{padding-left:0; padding-right:0}
+}
+@media(min-width:768px){
+	.page-visual{min-height:300px; height:300px}
+	.page-visual .inner div{margin-top:15px}
+}
+@media(min-width:1070px){
+	.page-visual{min-height:340px; height:340px}
+	.page-visual .inner div{margin-top:20px}
+	.page-visual .inner{padding-top:50px}
+	.main .page-visual{min-height:520px; height:520px}
+	.main .page-visual::before{background:#11283E url(/images/visual-bg.png) center no-repeat; opacity:1}
+}
+
+.light .page-visual::before{background-color:#fff; opacity:.1}
+.light .page-visual{color:#222}  
+/* .light .page-issue .page-visual{background:#f7f9fb} */
+.main .page-visual h2{display:inline-block}
+.main .page-visual h2,
+.main .page-visual p{position:relative}
+.main .page-visual h2::before{content:''; width:27px; height:27px; box-sizing:border-box; border-radius:50px; display:inline-block; position:absolute; background-color:transparent; border:7px solid #2DCA0D; top:-10px; left:-40px}
+.main .page-visual::after{content:''; background:url(/images/m-visual-bg-right.png) no-repeat; display:inline-block; position:absolute; bottom:-70px; width:280px; height:190px; right:-110px}
+
+@media(min-width:600px){
+	.main .page-visual::after{bottom:-50px; right:-50px}
+}
+@media(min-width:1070px){
+	.main .page-visual::after,
+	.main .page-visual h2::before{display:none}
+}
+
+.issue-post .page-visual{background-position:center; background-repeat:no-repeat; background-size:cover}
+.issue-post .page-visual::before{background-color:#010414; opacity:.6;}
+.issue-post h2{font-weight:500;}
+.issue-post h3{font-weight:600; margin-top:10px}
+@media(min-width:1070px){
+  .issue-post .page-visual{height:580px}
+  .issue-post h3{margin-top:20px; line-height:1.4;}
+}
+
