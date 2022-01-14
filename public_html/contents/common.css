@@ -1,0 +1,641 @@
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h 5,
+h6,
+p,
+small {
+    text-align: left;
+}
+.tx65 {
+    font-size: 30px;
+    letter-spacing: -0.7px;
+    line-height: 1.3;
+}
+.tx45 {
+    font-size: 23px;
+    letter-spacing: -0.3px;
+    line-height: 1.3;
+}
+.tx40 {
+    font-size: 18px;
+    letter-spacing: -0.5px;
+    line-height: 1.35;
+}
+.tx35 {
+    font-size: 18px;
+    letter-spacing: -0.5px;
+    line-height: 1.35;
+}
+.tx30 {
+    font-size: 18px;
+    letter-spacing: -0.5px;
+    line-height: 1.35;
+}
+.tx26 {
+    font-size: 18px;
+    letter-spacing: -0.2px;
+    line-height: 1.4;
+}
+.tx25 {
+    font-size: 17px;
+    letter-spacing: -0.2px;
+    line-height: 1.4;
+}
+.tx24 {
+    font-size: 18px;
+    letter-spacing: -0.2px;
+    line-height: 1.4;
+}
+.tx23 {
+    font-size: 17px;
+    letter-spacing: -0.2px;
+}
+.tx22 {
+    font-size: 16px;
+    letter-spacing: -0.2px;
+    line-height: 1.35;
+}
+.tx20 {
+    font-size: 16px;
+}
+.tx19 {
+    font-size: 15px;
+}
+.tx18 {
+    font-size: 14px;
+    line-height: 1.6;
+}
+p {
+    font-size: 15px;
+    line-height: 1.7;
+}
+.tx17 {
+    font-size: 15px;
+    line-height: 1.4;
+    letter-spacing: -0.2px;
+}
+.tx16 {
+    font-size: 14px;
+    line-height: 1.7;
+}
+.tx15 {
+    font-size: 13px;
+    line-height: 1.6;
+}
+.tx14 {
+    font-size: 12px;
+    line-height: 1.5;
+}
+.tx13 {
+    font-size: 12px;
+    line-height: 1.5;
+}
+.tx12 {
+    font-size: 12px;
+    line-height: 1.5;
+}
+@media (min-width: 768px) {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    small {
+        text-align: inherit;
+    }
+    .tx65 {
+        font-size: 40px;
+        letter-spacing: -2px;
+    }
+    .tx45 {
+        font-size: 30px;
+        letter-spacing: -1px;
+    }
+    .tx40 {
+        font-size: 28px;
+        letter-spacing: -1px;
+    }
+    .tx35 {
+        font-size: 25px;
+        letter-spacing: -1px;
+    }
+    .tx30 {
+        font-size: 23px;
+        letter-spacing: -1px;
+    }
+    .tx26 {
+        font-size: 22px;
+        letter-spacing: -0.5px;
+    }
+    .tx25 {
+        font-size: 22px;
+        letter-spacing: -0.5px;
+    }
+    .tx24 {
+        font-size: 21px;
+        letter-spacing: -0.4px;
+    }
+    .tx23 {
+        font-size: 20px;
+    }
+    .tx22 {
+        font-size: 19px;
+        line-height: 1.4;
+    }
+    .tx20 {
+        font-size: 18px;
+    }
+    .tx19 {
+        font-size: 17px;
+    }
+    .tx18 {
+        font-size: 15px;
+        line-height: 1.8;
+        letter-spacing: -0.3px;
+    }
+    p {
+        font-size: 17px;
+        line-height: 1.8;
+        letter-spacing: -0.3px;
+    }
+    .tx17 {
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: -0.3px;
+    }
+    .tx16 {
+        font-size: 15px;
+    }
+    .tx15 {
+        font-size: 14px;
+    }
+    .tx14 {
+        font-size: 14px;
+    }
+    .tx13 {
+        font-size: 13px;
+    }
+    .tx12 {
+        font-size: 12px;
+    }
+}
+@media (min-width: 1070px) {
+    .tx65 {
+        font-size: 65px;
+        line-height: 1.1;
+    }
+    .tx45 {
+        font-size: 45px;
+        letter-spacing: -1.5px;
+    }
+    .tx40 {
+        font-size: 40px;
+    }
+    .tx35 {
+        font-size: 35px;
+        letter-spacing: -2px;
+    }
+    .tx30 {
+        font-size: 30px;
+        letter-spacing: -1.5px;
+    }
+    .tx26 {
+        font-size: 26px;
+    }
+    .tx25 {
+        font-size: 25px;
+    }
+    .tx24 {
+        font-size: 24px;
+    }
+    .tx23 {
+        font-size: 23px;
+    }
+    .tx22 {
+        font-size: 22px;
+    }
+    .tx20 {
+        font-size: 20px;
+    }
+    .tx19 {
+        font-size: 19px;
+    }
+    .tx18,
+    p {
+        font-size: 18px;
+        line-height: 1.8;
+        letter-spacing: -0.2px;
+    }
+    .tx17 {
+        font-size: 17px;
+    }
+    .tx16 {
+        font-size: 16px;
+    }
+    .tx15 {
+        font-size: 15px;
+    }
+    .tx14 {
+        font-size: 14px;
+    }
+    .tx13 {
+        font-size: 13px;
+    }
+    .tx12 {
+        font-size: 12px;
+    }
+}
+
+b,
+strong {
+    font-weight: 600;
+}
+/* word-break */
+div,
+span,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    word-break: keep-all;
+}
+
+/* Retina */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+}
+
+a {
+    cursor: pointer;
+}
+
+/* 파트별 상하 패딩 설정 */
+.part-t {
+    padding-top: 30px;
+}
+.part-b {
+    padding-bottom: 30px;
+}
+.part-tb {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.part-t-2x {
+    padding-top: 40px;
+}
+.part-b-2x {
+    padding-bottom: 40px;
+}
+.part-tb-2x {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.part-t-3x {
+    padding-top: 50px;
+}
+.part-b-3x {
+    padding-bottom: 50px;
+}
+.part-tb-3x {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+@media (min-width: 768px) {
+    .part-t {
+        padding-top: 30px;
+    }
+    .part-b {
+        padding-bottom: 30px;
+    }
+    .part-tb {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .part-t-2x {
+        padding-top: 50px;
+    }
+    .part-b-2x {
+        padding-bottom: 50px;
+    }
+    .part-tb-2x {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .part-t-3x {
+        padding-top: 70px;
+    }
+    .part-b-3x {
+        padding-bottom: 70px;
+    }
+    .part-tb-3x {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+}
+
+@media (min-width: 1070px) {
+    .part-t {
+        padding-top: 60px;
+    }
+    .part-b {
+        padding-bottom: 60px;
+    }
+    .part-tb {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .part-t-2x {
+        padding-top: 80px;
+    }
+    .part-b-2x {
+        padding-bottom: 80px;
+    }
+    .part-tb-2x {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .part-t-3x {
+        padding-top: 110px;
+    }
+    .part-b-3x {
+        padding-bottom: 110px;
+    }
+    .part-tb-3x {
+        padding-top: 110px;
+        padding-bottom: 110px;
+    }
+}
+
+/* 768px 이상에서 BR태그 활성 */
+h1 > br,
+h2 > br,
+h3 > br,
+h4 > br,
+h5 > br,
+h6 > br,
+p > br {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    h1 > br,
+    h2 > br,
+    h3 > br,
+    h4 > br,
+    h5 > br,
+    h6 > br,
+    p > br {
+        display: inherit;
+    }
+}
+
+.blind {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+button {
+    border: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: Transparent;
+}
+
+/* FONT-WEIGHT */
+.fw400 {
+    font-weight: 400;
+}
+.fw500 {
+    font-weight: 500;
+}
+.fw600 {
+    font-weight: 600;
+}
+h1,
+h2 {
+    font-weight: 600;
+}
+h3 {
+    font-weight: 500;
+}
+
+.ico-new::before,
+.ico-up::before,
+.tit-acco h3,
+.ac-gn-inner .user span,
+.ac-gn-inner .bn-login,
+.ac-gn-inner .bn-lang,
+html,
+body,
+div,
+span,
+object,
+iframe,
+p,
+button {
+    font-family: 'Roboto', 'Apple SD Gothic Neo', Helvetica, 'notokr', '나눔고딕', NanumGothic, '맑은고딕', Malgun Gothic, Arial, sans-serif !important;
+    font-weight: normal;
+}
+
+/* 스퀘어 폰트 셋팅 */
+.headtxt h1 b,
+h1,
+h2,
+h3,
+.ac-gn-inner > li > a {
+    font-family: 'NanumSquare', 'Apple SD Gothic Neo', 'Malgun Gothic', '맑은 고딕', '돋움', dotum, Helvetica, sans-serif !important;
+}
+
+@media (min-width: 768px) {
+    .info h4,
+    .w-title {
+        font-family: 'NanumSquare', 'Apple SD Gothic Neo', 'Malgun Gothic', '맑은 고딕', '돋움', dotum, Helvetica, sans-serif !important;
+    }
+}
+@media (min-width: 1070px) {
+    .tab a,
+    .nav-tit,
+    .page-service .tit-tab a,
+    .ask-title,
+    .bn {
+        font-family: 'NanumSquare', 'Apple SD Gothic Neo', 'Malgun Gothic', '맑은 고딕', '돋움', dotum, Helvetica, sans-serif !important;
+    }
+}
+
+.tag,
+.rep,
+.box-noti-2nd li,
+.box-noti-2nd div {
+    font-family: '맑은고딕', Malgun Gothic, Arial, sans-serif !important;
+}
+
+.see-more,
+.pagenation a,
+.bn-store a,
+h2.sm-tit {
+    font-family: 'Roboto', 'notokr' !important;
+}
+
+.container,
+.container-fluid {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 760px;
+    }
+    .container,
+    .container-fluid {
+        width: 100%;
+    }
+    .container,
+    .container-fluid {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+@media (min-width: 1070px) {
+    .container {
+        max-width: 980px;
+    }
+    .container-fluid {
+        max-width: none;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
+/*박세희님의 css*/
+/*font commom*/
+.page-title {
+    font-size: 35px;
+    text-align: center;
+    color: #fff;
+}
+.website-pt {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.visual {
+    background-image: url(../images/header_bg_2.webp);
+    background-size: cover;
+    background-position: center center;
+}
+.contents-btn-wrap {
+    text-align: center;
+}
+.contents-btn-wrap a {
+    background-color: #fff;
+    border-radius: 15px;
+    display: inline-block;
+    width: 140px;
+    padding: 14px 0px;
+    margin: 5px;
+}
+
+.nation-btn {
+    border: 1px solid #4c6fff;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 5px;
+}
+
+.table-tab {
+    display: inline-flex;
+    padding-bottom: 10px;
+}
+.table-tab a {
+    margin-right: 10px;
+}
+/*search bar*/
+.search-ui {
+    width: 100%;
+}
+.search-ui input {
+    border: 1px solid #e2e2e2;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.search-ui .search-btn-result {
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+}
+
+/*table*/
+.website-table tr:nth-child(even) {
+    background-color: #fafafa;
+}
+.table-head {
+    border-bottom: 1px solid #999;
+}
+.table-head th {
+    font-weight: bold;
+    padding-bottom: 11px;
+}
+.website-table {
+    overflow-x: auto;
+}
+.website-table table {
+    width: 1200px;
+}
+.separation {
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+span.separation.btn-green {
+    background-color: #00ca70;
+}
+span.separation.btn-orange {
+    background-color: #ffb444;
+}
+.url-row {
+    color: #4c6fff;
+}
+
+/*media*/
+@media (min-width: 768px) {
+    .page-title {
+    }
+}
+
+@media (min-width: 1070px) {
+    .page-title {
+    }
+}
+@media (min-width: 1200px) {
+    .page-title {
+    }
+
+    .website-pt {
+        padding-top: 145px;
+        padding-bottom: 122px;
+    }
+}
+
+overflow-y: auto;
+overflow-x: hidden;
+height: 100px;
