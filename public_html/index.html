@@ -1,182 +1,193 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="cache-control" content="no-store,max-age=0" />
-        <meta name="robots" content="noindex" />
-        <title>전세계 현황</title>
-        <script type="text/javascript" src="./scripts/jquery-1.11.3.min.js"></script>
-        <script type="text/javascript" src="./scripts/headroom.js"></script>
-        <script type="text/javascript" src="./scripts/headroom.min.js"></script>
-        <link rel="stylesheet" href="./css/reset.css" />
-        <link rel="stylesheet" href="./css/font.css" />
-        <link rel="stylesheet" href="./css/header.css" />
-        <link rel="stylesheet" href="./css/common.css" />
-        <link rel="stylesheet" href="./css/index.css" />
-        <link rel="stylesheet" href="./css/nav.css" />
-    </head>
-    <body>
-        <header class="ac-nav-overlap headroom headroom--top headroom--not-bottom">
-            <nav id="ac-globalnav">
-                <div class="ac-gn-content">
-                    <a class="logo"><span>O</span>nline <span>C</span>ontents <span>S</span>tatus</a>
-                    <div id="menu-btn">
-                        <div class="ico-menu-inner"></div>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="cache-control" content="no-store,max-age=0" />
+    <meta name="robots" content="noindex" />
+    <title>전 세계 복음 콘텐츠 현황</title>
+    <script type="text/javascript" src="./scripts/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="./scripts/headroom/headroom.js"></script>
+    <script type="text/javascript" src="./scripts/headroom/headroom.min.js"></script>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/font.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/nav.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+</head>
+<body class="dark">
+    <header class="ac-nav-overlap headroom headroom--top headroom--not-bottom">
+        <nav id="ac-globalnav">
+            <div class="ac-gn-content">
+                <a class="logo">Online Contents Status</a>
+                <div id="menu-btn">
+                    <div class="ico-menu-inner"></div>
+                </div>
+                <div class="ac-gn-list">
+                    <ul class="ac-gn-inner">
+                        <li class="ac-gn-item ac-gn-item-menu">
+                            <a href="">구글 검색 결과</a>
+                        </li>
+                        <li class="ac-gn-item ac-gn-item-menu">
+                            <span class="submenu-button"></span>
+                            <a href="">콘텐츠 현황</a>
+                            <ul class="sub-menu">
+                                <li><a href="">웹사이트</a></li>
+                                <li><a href="">유튜브</a></li>
+                                <li><a href="">구글 비즈니스 프로필</a></li>
+                                <li><a href="">SNS</a></li>
+                                <li><a href="">국가 홈페이지</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <article>
+        <div class="visual part-b-2x">
+            <div class="container part-t">
+                <div class="head-text">
+                    <h1 class="tx45">전 세계 온라인 콘텐츠 현황</h1>
+                    <p>테스트<br /> 미디어 및 콘텐츠를 한 눈에 볼 수 있습니다.</p>
+                </div>
+                <div class="part-t row card-wrap">
+                    <div class="col-12 col-lg-3">
+                        <a class="item">
+                            <div class="box-icon ico ico-goggle"></div>
+                            <div class="info">
+                                <h3 class="tx20">구글 검색 결과</h3>
+                                <p class="tx14">국가 및 언어별 구글 검색결과를 <br>확인할 수 있습니다.</p>
+                            </div>
+                        </a>
                     </div>
-                    <div class="ac-gn-list">
-                        <ul class="ac-gn-inner">
-                            <li class="ac-gn-item ac-gn-item-menu"><a href="">구글 검색 결과</a></li>
-                            <li class="ac-gn-item ac-gn-item-menu">
-                                <span class="submenu-button"></span>
-                                <a href="">콘텐츠 현황</a>
-                                <ul class="sub-menu">
-                                    <li><a href="">웹사이트</a></li>
-                                    <li><a href="">유튜브</a></li>
-                                    <li><a href="">구글 비즈니스 프로필</a></li>
-                                    <li><a href="">SNS</a></li>
-                                    <li><a href="">국가 홈페이지</a></li>
-                                </ul>
-                            </li>
-                        </ul>
+                    <div class="col-12 col-lg-3">
+                        <a class="item">
+                            <div class="box-icon ico ico-status"></div>
+                            <div class="info">
+                                <h3 class="tx20">콘텐츠 현황</h3>
+                                <p class="tx14">영역별 온라인 콘텐츠 현황을 <br>확인할 수 있습니다.</p>
+                            </div>
+                        </a>
                     </div>
                 </div>
-            </nav>
-        </header>
+            </div>
+        </div>
 
-        <article class="page-index">
-            <div class="part-b-2x">
-                <div class="visual">
-                    <div class="container">
-                        <div class="headtxt">
-                            <h1 class="tx45">전 세계 온라인 콘텐츠 현황</h1>
-                            <p>
-                                전 세계 온라인 복음 완성 및 환경 개선을 위해 총회에서 만들어진<br />
-                                미디어 및 콘텐츠를 한 눈에 볼 수 있습니다.
-                            </p>
-                        </div>
-                        <div class="row card-wrap">
-                            <div class="col-12 col-lg-3">
-                                <a class="item" href="#">
-                                    <div class="ico ico-id box-icon"></div>
-                                    <div class="info">
-                                        <h3 class="tx20">구글 검색 결과</h3>
-                                        <p class="tx14">국가 및 언어별 구글 검색결과를 확인할 수 있습니다.</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-12 col-lg-3">
-                                <a class="item" href="#">
-                                    <div class="ico ico-pw box-icon"></div>
-                                    <div class="info">
-                                        <h3 class="tx20">콘텐츠 현황</h3>
-                                        <p class="tx14">영역별 온라인 콘텐츠 현황을 확인할 수 있습니다.</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
+            <div class="container part-t">
+                <div class="head-sub-text">
+                    <h2 class="tx25">콘텐츠 전체 현황</h2>
+                    <div>
+                        <span class="color-chip green"></span>
+                        <span>공식</span>
+                        <span class="color-chip orange"></span>
+                        <span>비공식</span>
                     </div>
                 </div>
-
-                <div class="container part-tb service-wrap">
-                    <div class="tit">
-                        <h2 class="tx25">콘텐츠 전체 현황 ></h2>
-                    </div>
-                    <div id="tab01" class="row tab-content web current">
-                        <div class="col-12 col-lg-3 w-item">
-                            <span>website</span>
-                            <h6>웹사이트</h6>
+                <div class="part-tb row contents-wrap">
+                    <div class="col-12 col-lg-3 item">
+                        <span>WEBSITE</span>
+                        <h6>웹사이트</h6>
+                        <div class="between">
+                            <div>전체</div>
+                            <div>공식 / 비공식</div>
+                        </div>
+                        <div class="between">
+                            <div>205</div>
                             <div>
-                                <span>전체</span>
-                                <span>공식/비공식</span>
-                            </div>
-                            <div>
-                                <span>205</span>
                                 <span>55</span>
-                                <span>150</span>
-                            </div>
-                            <div><span></span> <span></span></div>
-                        </div>
-
-                        <div class="col-12 col-lg-3 w-item">
-                            <div>
-                                <span>YOUTUBE</span>
-                                <h6>유튜브</h6>
-                            </div>
-                            <div>
-                                <span>전체</span>
-                                <span>공식/비공식</span>
-                            </div>
-                            <div>
-                                <span>41</span>
-                                <span>20</span>
-                                <span>21</span>
-                            </div>
-                            <div><span></span> <span></span></div>
-                        </div>
-
-                        <div class="col-12 col-lg-3 w-item">
-                            <div>
-                                <span>GOOGLE BUSINESS PROFILE</span>
-                                <h6>구글 비즈니스 프로필</h6>
-                            </div>
-                            <div>
-                                <span>전체</span>
-                            </div>
-                            <div>
-                                <span>219</span>
-                            </div>
-                            <div>
-                                <span></span>
+                                <span>55</span>
                             </div>
                         </div>
+                        <div class="color-bar green">
+                            <div class="color-bar orange"></div>
+                        </div>
+                    </div>
 
-                        <div class="col-12 col-lg-3 w-item">
+                    <div class="col-12 col-lg-3 item">
+                        <span>WEBSITE</span>
+                        <h6>웹사이트</h6>
+                        <div class="between">
+                            <div>전체</div>
+                            <div>공식 / 비공식</div>
+                        </div>
+                        <div class="between">
+                            <div>205</div>
                             <div>
-                                <span>SOCIAL NETWORKING SERVICE</span>
-                                <h6>SNS</h6>
+                                <span>55</span>
+                                <span>55</span>
                             </div>
+                        </div>
+                        <div class="color-bar green">
+                            <div class="color-bar orange"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-3 item">
+                        <span>WEBSITE</span>
+                        <h6>웹사이트</h6>
+                        <div class="between">
+                            <div>전체</div>
+                            <div>공식 / 비공식</div>
+                        </div>
+                        <div class="between">
+                            <div>205</div>
                             <div>
-                                <span>전체</span>
-                                <span>공식/비공식</span>
+                                <span>55</span>
+                                <span>55</span>
                             </div>
+                        </div>
+                        <div class="color-bar green">
+                            <div class="color-bar orange"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-3 item">
+                        <span>WEBSITE</span>
+                        <h6>웹사이트</h6>
+                        <div class="between">
+                            <div>전체</div>
+                            <div>공식 / 비공식</div>
+                        </div>
+                        <div class="between">
+                            <div>205</div>
                             <div>
-                                <span>70</span>
-                                <span>17</span>
-                                <span>53</span>
+                                <span>55</span>
+                                <span>55</span>
                             </div>
-                            <div>
-                                <span></span>
-                            </div>
+                        </div>
+                        <div class="color-bar green">
+                            <div class="color-bar orange"></div>
                         </div>
                     </div>
                 </div>
             </div>
-        </article>
+    </article>
 
-        <script>
-            window.addEventListener('DOMContentLoaded', () => {
-                //headroom
-                let Header = document.querySelector('header');
-                let headroom = new Headroom(Header, {
-                    offset: 35,
-                    tolerance: 5,
-                });
-                headroom.init();
-
-                // Mobile menu
-                document.querySelector('#menu-btn').addEventListener('click', (e) => {
-                    const mobileMenu = e.target.closest('div#menu-btn');
-                    mobileMenu.classList.toggle('menu-opened');
-                    document.querySelector('html').classList.toggle('open');
-
-                    if (mobileMenu.classList.contains('menu-opened')) {
-                        document.querySelector('.ac-gn-list').style.height = `${window.innerHeight - 50}px`;
-                    } else {
-                        document.querySelector('.ac-gn-list').style.height = 'auto';
-                    }
-                });
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            //headroom
+            let Header = document.querySelector('header');
+            let headroom = new Headroom(Header, {
+                offset: 35,
+                tolerance: 5,
             });
-        </script>
-    </body>
+            headroom.init();
+
+            // Mobile menu
+            document.querySelector('#menu-btn').addEventListener('click', (e) => {
+                const mobileMenu = e.target.closest('div#menu-btn');
+                mobileMenu.classList.toggle('menu-opened');
+                document.querySelector('html').classList.toggle('open');
+
+                if (mobileMenu.classList.contains('menu-opened')) {
+                    document.querySelector('.ac-gn-list').style.height = `${window.innerHeight - 50}px`;
+                } else {
+                    document.querySelector('.ac-gn-list').style.height = 'auto';
+                }
+            });
+        });
+    </script>
+</body>
 </html>
