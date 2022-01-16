@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+.visual {background-image:linear-gradient(112deg, #e2f9fe, #e9e2fe); padding-top:75px;}
+.head-text h1 {color:#222; font-weight:400; margin-top:8px;}
+.head-text h1 b {font-weight:600;}
+.head-text h2 {color:#888ab3;}
+.head-text p {margin-top:8px; color:#444; line-height:1.6;}
+.head-text h1,
+.head-text p{text-align:center;}
+
+.card-wrap .item {background:#fff; display:flex; padding:16px; border-radius:15px; box-shadow:0 5px 15px rgba(81, 98, 164, 0.05);}
+.card-wrap .item .info {flex:1;}
+.card-wrap .item .info .ico-goggle {position:relative;}
+.card-wrap .item .info .ico-goggle::before {content:''; width:6px; height:6px; background:#ff3d3d; display:inline-block; border-radius:6px; margin-right:6px; position:relative; top:-1px;}
+
+/* .row{display:-ms-flexbox; display:flex; -ms-flex-wrap:wrap; flex-wrap:wrap; margin-right:-15px; margin-left:-15px}
+.row, */
+.card-wrap {justify-content:center;}
+.card-wrap .item {transition:all 0.2s ease;}
+
+.box-icon {width:44px; height:44px; border-radius:15px; display:flex; align-items:center; justify-content:center; margin-right:16px;}
+.box-icon::before {width:24px; height:24px;}
+.box-icon.ico-goggle {background:#9a54ff;}
+.box-icon.ico-goggle::before {background-image:url(../images/ico-goggle.svg);}
+.box-icon.ico-status {background:#ff5174;}
+.box-icon.ico-status::before {background-image:url(../images/ico-status.svg);}
+
+@media(min-width:1070px) {
+    .box-icon::before {width:36px; height:36px}
+    .card-wrap .item {flex-direction:column; text-align:center; align-items:center; padding:36px; height:100%;}
+    .box-icon {width:60px; height:60px; margin-right:0}
+    .card-wrap .item h3 {margin-top:16px}
+    .card-wrap .item p {margin-top:8px}
+}
+@media(max-width:1069px) {
+    .card-wrap > div {margin-bottom:4px}
+}
+
+.head-sub-text {display:flex; justify-content:space-between;}
+.head-sub-text h2 {color:#222; font-weight:400;}
+.head-sub-text .ico-arrow-r::after {width:8px; height:16px; margin-left:12px;}
+.head-sub-text div {display:flex;}
+.color-chip {width:12px; height:12px; border-radius:4px;}
+.orange {background-color:orange;}
+.green {background-color:green;}
+.contents-wrap {justify-content:center;}
+.contents-wrap .item {background:#fff; padding:16px; border:1px solid #ddd; border-radius:15px; box-shadow:0 5px 15px rgba(81, 98, 164, 0.05);}
+.between {display:flex; justify-content:space-between;}
+.color-bar {width:100%; height:12px; border-radius:10px;}
+.color-bar.green {position:relative;}
+.color-bar.orange {position:absolute; top:0; right:0; width:50%; border-radius:0 10px 10px 0; border-left:3px solid #fff;}
