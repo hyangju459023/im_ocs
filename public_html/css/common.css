@@ -854,93 +854,35 @@ option {
 
 
 /*박세희님의 css*/
-/*font commom*/
-.page-title {font-size:35px; text-align:center; color:#fff;
-}
-.website-pt {
-    padding-top: 40px;
-    padding-bottom: 40px;
-}
+.page-title {font-size:35px; text-align:center; color:#fff}
 
-.visual {
-    background-image: url(../images/header_bg_2.webp);
-    background-size: cover;
-    background-position: center center;
-}
-.contents-btn-wrap {
-    text-align: center;
-}
-.contents-btn-wrap a {
-    background-color: #fff;
-    border-radius: 15px;
-    display: inline-block;
-    width: 140px;
-    padding: 14px 0px;
-    margin: 5px;
-}
+.visual {background-image: url(../images/header_bg_2.webp); background-size:cover; background-position:center center}
+.contents-btn-wrap {text-align: center}
+.contents-btn-wrap a {background-color: #fff; border-radius:15px; display:inline-block; width:140px; padding:14px 0px; margin:5px}
 
-.nation-btn {
-    border: 1px solid #4c6fff;
-    border-radius: 5px;
-    padding: 10px;
-    margin-right: 5px;
-}
+.nation-btn {border: 1px solid #4c6fff; border-radius: 5px; padding: 10px; margin-right: 5px}
+.nation-btn::after {content:""; background:url(../images/ico-right-allow.svg) no-repeat 0 0; display:inline-block; width:7px; height:13px; vertical-align:text-top; margin:2px 0 0 5px}
 
-.table-tab {
-    display: inline-flex;
-    padding-bottom: 10px;
-}
-.table-tab a {
-    margin-right: 10px;
-}
+.table-tab {display:inline-flex; padding-bottom:10px}
+.table-tab a {margin-right: 10px;}
+
 /*search bar*/
-.search-ui {
-    width: 100%;
-}
-.search-ui input {
-    border: 1px solid #e2e2e2;
-    border-radius: 4px;
-    width: 100%;
-}
-
-.search-ui .search-btn-result {
-    display: inline-block;
-    position: absolute;
-    right: 20px;
-}
+.search-ui {width:100%;}
+.search-ui input {border:1px solid #e2e2e2; border-radius:4px; width:100%}
+.search-ui .search-btn-result {display:inline-block; position:absolute; right:20px}
 
 /*table*/
-.website-table tr:nth-child(even) {
-    background-color: #fafafa;
-}
-.table-head {
-    border-bottom: 1px solid #999;
-}
-.table-head th {
-    font-weight: bold;
-    padding-bottom: 11px;
-}
-.website-table {
-    overflow-x: auto;
-}
-.website-table table {
-    width: 1200px;
-}
-.separation {
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 4px;
-}
-span.separation.btn-green {
-    background-color: #00ca70;
-}
-span.separation.btn-orange {
-    background-color: #ffb444;
-}
-.url-row {
-    color: #4c6fff;
-}
-.nation-btn::after {content:""; background:url(../images/ico-right-allow.svg) no-repeat 0 0; display:inline-block; width:7px; height:13px; vertical-align:text-top; margin:2px 0 0 5px}
+.website-table tr:nth-child(even) {background-color:#fafafa}
+.table-head {border-bottom:1px solid #999}
+.table-head th {font-weight:bold; padding-bottom:11px}
+.website-table {overflow-x:auto}
+.website-table table {width:1200px;}
+.separation {color:#fff; padding:5px 10px; border-radius:4px;}
+span.separation.btn-green {background-color:#00ca70}
+span.separation.btn-orange {background-color:#ffb444}
+.url-row {color:#4c6fff; margin-top:0px; margin-bottom:8px;}
+
+
 
 /*media*/
 @media (min-width: 768px) {
