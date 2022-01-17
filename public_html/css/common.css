@@ -344,15 +344,16 @@ option {
 .page-title {font-size:35px; text-align:center; color:#fff}
 
 .visual {background-image:url(../images/header_bg_2.webp); background-size:cover; background-position:center center}
-.contents-btn-wrap {text-align:center}
+.contents-btn-wrap {text-align:center; font-size:14px}
 .contents-btn-wrap a {background-color:#fff; border-radius:15px; display:inline-block; width:160px; padding:14px 0px; margin:5px; box-shadow:0 15px 30px -7px rgb(0 0 0 / 30%);}
 .contents-btn-wrap .active {background:#4c6fff; color:#fff}
-.nation-btn {border:1px solid #4c6fff; border-radius:5px; padding:10px; margin-right:5px}
+.nation-btn {border:1px solid #4c6fff; border-radius:5px; padding:10px; margin-right:5px; font-size:12px}
 .nation-btn::after {content:""; background:url(../images/ico-right-allow.svg) no-repeat 0 0; display:inline-block; width:7px; height:13px; vertical-align:text-top; margin:2px 0 0 5px}
 
 .table-tab {display:inline-flex; padding-bottom:10px}
-.table-tab a {margin-right:10px}
+.table-tab a {margin-right:10px; font-weight: 600}
 .table-tab .current {color:#4c6fff}
+
 /*search bar*/
 .search-ui {width:100%}
 .search-ui input {border:1px solid #e2e2e2; border-radius:4px; width:100%}
@@ -379,14 +380,15 @@ table tbody tr:nth-child(even) {background:#f8f8f9}
 .website-list table thead th:first-child,
 .website-list table tbody td:first-child {text-align:center}
 .separation {color:#fff; padding:5px 10px; border-radius:4px}
-.separation.btn-green {background-color:#00ca70}
-.separation.btn-orange {background-color:#ffb444}
+.separation.btn-green {background-color:#00ca70; font-size: 12px}
+.separation.btn-orange {background-color:#ffb444; font-size: 12px}
 .url-row {color:#4c6fff; margin-top:0px; margin-bottom:8px}
 .row-num {width:5%}
 .row-gb {width:100px}
 .row-site {width:200px}
 .row-lang {width:30%}
 
+.url-title-row {font-size:14px}
 @media (max-width:1070px) {
     table {width: 1070px !important}
 }
