@@ -870,10 +870,10 @@ option {
 .table-head th {font-weight:bold; padding-bottom:11px}
 .website-table {overflow-x:auto}
 .website-table table {width:1200px;}
-.separation {color:#fff; padding:5px 10px; border-radius:4px;}
+.separation {color:#fff; padding:5px 10px; border-radius:4px}
 span.separation.btn-green {background-color:#00ca70}
 span.separation.btn-orange {background-color:#ffb444}
-.url-row {color:#4c6fff; margin-top:0px; margin-bottom:8px;}
+.url-row {color:#4c6fff; margin-top:0px; margin-bottom:8px}
 
 
 
