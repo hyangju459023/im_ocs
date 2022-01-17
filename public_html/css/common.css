@@ -160,98 +160,6 @@ p      {font-size:16px; margin-top:7px; line-height:1.7; font-weight:400}
     .scale:hover {box-shadow:0 15px 30px -7px rgb(0 0 0 / 30%); transform:scale(1.02)}
 }
 
-.tit .ico-arrow-r::after {
-    width:8px; 
-    height:16px; 
-    margin-left:12px; 
-}
-
-@media (min-width:1070px) {
-    .tit-tab {
-        border-bottom:none; 
-    }
-    .tit-tab a {
-        margin-right:16px; 
-        margin-top:0; 
-    }
-    .tit-tab a:last-child {
-        margin-right:0; 
-    }
-    .tit-tab .current {
-        border-bottom:none; 
-    }
-    .service-wrap .row {
-        margin-top:0; 
-    }
-    .service-wrap .tit {
-        display:flex; 
-        align-items:center; 
-        justify-content:space-between; 
-        margin-bottom:-10px; 
-    }
-    .service-wrap .tit p {
-        margin-top:16px; 
-    }
-}
-
-/* PAGE-SERVICE */
-.page-service .app {
-    padding-top:20px; 
-    padding-bottom:40px; 
-}
-.page-service .web {
-    padding-bottom:40px; 
-}
-.page-service .page-title {
-    padding-top:15px; 
-    padding-bottom:15px; 
-}
-.page-service .page-title h1 {
-    text-align:center; 
-}
-.page-service .tit-tab {
-    text-align:center; 
-    border:none; 
-    margin-top:16px; 
-    margin-bottom:16px; 
-}
-.page-service .tit-tab a {
-    font-size:14px; 
-    font-weight:500; 
-    border-radius:30px; 
-    padding:8px 14px; 
-    display:inline-block; 
-    background:#ebebf1; 
-    color:#888; 
-    margin-right:0; 
-    margin-top:0; 
-}
-.page-service .tit-tab a.current {
-    color:#fff; 
-    background:#684cf5; 
-}
-
-@media (min-width:1070px) {
-    .page-service .app {
-        padding-top:40px; 
-        padding-bottom:60px; 
-    }
-    .page-service .web {
-        padding-bottom:60px; 
-    }
-    .page-service .page-title {
-        padding-top:30px; 
-        padding-bottom:30px; 
-    }
-    .page-service .tit-tab a {
-        padding:12px 20px; 
-        font-size:18px; 
-    }
-    .page-service .tit-tab {
-        margin-top:32px; 
-    }
-}
-
 /* 말줄임 */
 .info p,
 .info h4,
@@ -265,32 +173,16 @@ p      {font-size:16px; margin-top:7px; line-height:1.7; font-weight:400}
 .content800 {max-width:830px; margin-left:auto; margin-right:auto}
 .content900 {max-width:930px; margin-left:auto; margin-right:auto}
 @media (min-width:768px) {
-    .page-title > * {
-        text-align:center; 
-    }
-    .page-title h1 {
-        font-size:30px; 
-        letter-spacing:-1px; 
-    }
-    .page-title p {
-        font-size:14px; 
-    }
-    .btm-li li {
-        font-size:14px; 
-    }
+    .page-title > * {text-align:center}
+    .page-title h1 {font-size:30px; letter-spacing:-1px}
+    .page-title p {font-size:14px}
+    .btm-li li {font-size:14px}
 }
 
 @media (min-width:1070px) {
-    .page-title h1 {
-        font-size:45px; 
-    }
-    .page-title p {
-        margin-top:16px; 
-        font-size:15px; 
-    }
-    .page {
-        margin-top:80px; 
-    }
+    .page-title h1 {font-size:45px}
+    .page-title p {margin-top:16px; font-size:15px}
+    .page {margin-top:80px}
 }
 
 /* select */
@@ -302,33 +194,22 @@ select {height:44px; border-color:#dce0e6; padding:0 30px 0 15px; background:tra
 /* input */
 input,
 input[type='text'],
-textarea {
-    border:1px solid #dce0e6; 
-    min-height:35px; 
-    padding:10px; 
-    width:100%; 
-}
+textarea {border:1px solid #dce0e6; min-height:35px; padding:10px; width:100%}
 @media (min-width:1070px) {
     input,
     input[type='text'],
-    textarea {
-        min-height:50px; 
-    }
+    textarea {min-height:50px}
 }
 
 input,
 textarea,
 select,
-option {
-    font-size:15px; 
-}
+option {font-size:15px}
 @media (min-width:1070px) {
     input,
     textarea,
     select,
-    option {
-        font-size:16px; 
-    }
+    option {font-size:16px}
 }
 
 /* box */
@@ -345,14 +226,12 @@ option {
 
 .visual {background-image:url(../images/header_bg_2.webp); background-size:cover; background-position:center center}
 .contents-btn-wrap {text-align:center; font-size:14px}
-.contents-btn-wrap a {background-color:#fff; border-radius:15px; display:inline-block; width:160px; padding:14px 0px; margin:5px; box-shadow:0 15px 30px -7px rgb(0 0 0 / 30%);}
+.contents-btn-wrap a {background-color:#fff; border-radius:15px; display:inline-block; width:160px; padding:14px 0px; margin:5px; box-shadow:0 15px 30px -7px rgb(0 0 0 / 30%)}
 .contents-btn-wrap .active {background:#4c6fff; color:#fff}
 .nation-btn {border:1px solid #4c6fff; border-radius:5px; padding:5px; margin:0 10px 20px; font-size:14px}
 .nation-btn::after {content:""; background:url(../images/ico-right-allow.svg) no-repeat 0 0; display:inline-block; width:7px; height:13px; vertical-align:text-top; margin:1px 0 0 10px}
 
-.table-tab {display:inline-flex; padding-bottom:10px}
-.table-tab a {margin-right:10px; font-weight: 600}
-.table-tab .current {color:#4c6fff}
+.current {color:#4c6fff; font-weight:600}
 
 /*search bar*/
 /*table*/
@@ -368,8 +247,8 @@ table tbody tr:nth-child(even) {background:#f8f8f9}
 .website-list {clear:both; overflow-x:auto}
 .google-list table thead th,
 .google-list table tbody td {text-align:center;}
-.google-list table tbody td:first-child {text-align:left; position:relative; font-weight:600;}
-.google-list table tbody td span {position:absolute; right:0; color:#666; font-weight:initial;}
+.google-list table tbody td:first-child {text-align:left; position:relative; font-weight:600}
+.google-list table tbody td span {position:absolute; right:0; color:#666; font-weight:initial}
 .google-list table tbody .pw-reple-title:hover a,
 .google-list table tbody .pw-title:hover > a {cursor:pointer; color:#157EFB}
 .row-country {width:10%}
@@ -393,14 +272,14 @@ table tbody tr:nth-child(even) {background:#f8f8f9}
 }
 
 .url-title-row::after {content:""; background:url(../images/ico-url.svg) no-repeat 0 0; display:inline-block; width:9px; height:9px; vertical-align:text-top; margin:2px 0 0 5px}
-
-@media (min-width:768px) {
-.filter {display:flex; position:relative; height:60px}
-.filter div {justify-content:space-between}
-.search-item {position:absolute; right:0;}
-}
-
-span.ico-search {display: inline-block; position: absolute; right: 32px;}
+span.ico-search {display: inline-block; position: absolute; right: 32px}
 .filter div {margin-bottom:10px}
 .filter div a {margin-right:5px}
 .ico-search::after {content:""; background:url(../images/ico-search.svg) no-repeat 0 0; display:inline-block; position:absolute; width:38px; height:38px; top:10px; right:-15px; vertical-align:text-top; margin:2px 0 0 5px;}
+
+@media (min-width:768px) {
+    .filter {display:flex; position:relative; height:60px}
+    .filter div {justify-content:space-between}
+    .search-item {position:absolute; right:0}
+    .ico-search::after {right:-40px}
+}
