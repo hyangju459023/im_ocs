@@ -368,10 +368,11 @@ table tbody tr:nth-child(even) {background:#f8f8f9}
 .website-list {clear:both; overflow-x:auto}
 .google-list table thead th,
 .google-list table tbody td {text-align:center;}
-.google-list table tbody td span {color:#333}
-.google-list table tbody td:first-child {text-align:left}
+.google-list table tbody td:first-child {text-align:left; position:relative; font-weight:600;}
+.google-list table tbody td span {position:absolute; right:0; color:#666; font-weight:initial;}
 .google-list table tbody .pw-reple-title:hover a,
 .google-list table tbody .pw-title:hover > a {cursor:pointer; color:#157EFB}
+.row-country {width:10%}
 
 .website-list table thead th:first-child,
 .website-list table tbody td:first-child {text-align:center}
