@@ -10,8 +10,8 @@
 
 .card-wrap .item {background:#fff; display:flex; padding:16px; border-radius:15px; box-shadow:0 5px 15px rgba(81, 98, 164, 0.05);}
 .card-wrap .item .info {flex:1;}
-.card-wrap .item .info .ico-goggle {position:relative;}
-.card-wrap .item .info .ico-goggle::before {content:''; width:6px; height:6px; background:#ff3d3d; display:inline-block; border-radius:6px; margin-right:6px; position:relative; top:-1px;}
+.card-wrap .item .info .ico-google {position:relative;}
+.card-wrap .item .info .ico-google::before {content:''; width:6px; height:6px; background:#ff3d3d; display:inline-block; border-radius:6px; margin-right:6px; position:relative; top:-1px;}
 
 /* .row{display:-ms-flexbox; display:flex; -ms-flex-wrap:wrap; flex-wrap:wrap; margin-right:-15px; margin-left:-15px}
 .row, */
@@ -20,8 +20,8 @@
 
 .box-icon {width:44px; height:44px; border-radius:15px; display:flex; align-items:center; justify-content:center; margin-right:16px;}
 .box-icon::before {width:24px; height:24px;}
-.box-icon.ico-goggle {background:#9a54ff;}
-.box-icon.ico-goggle::before {background-image:url(../images/ico-goggle.svg);}
+.box-icon.ico-google {background:#9a54ff;}
+.box-icon.ico-google::before {background-image:url(../images/ico-google.svg);}
 .box-icon.ico-status {background:#ff5174;}
 .box-icon.ico-status::before {background-image:url(../images/ico-status.svg);}
 
