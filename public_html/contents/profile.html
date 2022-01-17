@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="cache-control" content="no-store,max-age=0" />
+        <meta name="robots" content="noindex" />
+        <title>전 세계 복음 콘텐츠 현황</title>
+        <script type="text/javascript" src="../scripts/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="../scripts/headroom/headroom.js"></script>
+        <script type="text/javascript" src="../scripts/headroom/headroom.min.js"></script>
+        <link rel="stylesheet" href="../css/reset.css" />
+        <link rel="stylesheet" href="../css/font.css" />
+        <link rel="stylesheet" href="../css/nav.css" />
+        <link rel="stylesheet" href="../css/common.css" />
+    </head>
+    <body>
+        <header class="ac-nav-overlap headroom headroom--top headroom--not-bottom">
+            <nav id="ac-globalnav">
+                <div class="ac-gn-content">
+                    <a class="logo">Online Contents Status</a>
+                    <div id="menu-btn">
+                        <div class="ico-menu-inner"></div>
+                    </div>
+                    <div class="ac-gn-list">
+                        <ul class="ac-gn-inner">
+                            <li class="ac-gn-item ac-gn-item-menu">
+                                <a href="">구글 검색 결과</a>
+                            </li>
+                            <li class="ac-gn-item ac-gn-item-menu">
+                                <span class="submenu-button"></span>
+                                <a href="">콘텐츠 현황</a>
+                                <ul class="sub-menu">
+                                    <li><a href="">웹사이트</a></li>
+                                    <li><a href="">유튜브</a></li>
+                                    <li><a href="">구글 비즈니스 프로필</a></li>
+                                    <li><a href="">SNS</a></li>
+                                    <li><a href="">국가 홈페이지</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!--제목-->
+        <div class="part-tb-2x visual">
+            <div class="container">
+                <h1 class="page-title part-b">콘텐츠 현황</h1>
+                <div class="contents-btn-wrap tx16">
+                    <a href="">웹사이트</a>
+                    <a href="">유튜브</a>
+                    <a class="active" href="">구글 비즈니스 프로필</a>
+                    <a href="">SNS</a>
+                </div>
+            </div>
+        </div>
+
+        <!--내용시작-->
+        <div class="container part-tb list-wrap">
+            <!--전체/공식/비공식, 검색창-->
+            <div class="filter row">
+                <!-- <div class="col-12 col-lg-3">
+                    <a class="tx18 current">전체<span class="tx17">(205)</span></a>
+                    <a class="tx18" href="#">공식<span class="tx17">(55)</span></a>
+                    <a class="tx18" href="#">비공식<span class="tx17">(150)</span></a>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <a class="nation-btn" href="">국가 홈페이지 모아보기 </a>
+                </div>
+
+                검색창
+                <div class="search-item col-12 col-lg-3">
+                    <input type="search" name="SEARCH" id="search" placeholder="검색어를 입력하세요" value="" />
+                    <span class="bn-search ico ico-search"></span>
+                </div> -->
+            </div>
+
+            <!--표.테이블-->
+            <div class="website-list">
+                <table>
+                    <thead class="table-head tx16">
+                        <tr>
+                            <th class="row-num">No.</th>
+                            <th class="row-gb">구분</th>
+                            <th calss="row-site">대회명</th>
+                            <th class="row-site">연합회</th>
+                            <th class="row-site">당회명</th>
+                            <th>비고</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <span class="separation btn-green">인증</span>
+                            </td>
+                            <td>경기대회</td>
+                            <td>성남연합회</td>
+                            <td>
+                                <a href="watv.org" target="_blank">
+                                    <span class="url-title-row tx16 fw600">새예루살렘 판교성전</span>
+                                </a>
+                            </td>
+                            <td class="tx13">미인증 사유가 여기 있습니다.</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>
+                                <span class="separation btn-orange">미인증</span>
+                            </td>
+                            <td>경기대회</td>
+                            <td>성남연합회</td>
+                            <td>
+                                <a href="watv.org" target="_blank">
+                                    <span class="url-title-row tx16 fw600">새예루살렘 판교성전</span>
+                                </a>
+                            </td>
+                            <td class="tx13">미인증 사유가 여기 있습니다.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <script>
+            window.addEventListener('DOMContentLoaded', () => {
+                //headroom
+                let Header = document.querySelector('header');
+                let headroom = new Headroom(Header, {
+                    offset: 35,
+                    tolerance: 5,
+                });
+                headroom.init();
+
+                // Mobile menu
+                document.querySelector('#menu-btn').addEventListener('click', (e) => {
+                    const mobileMenu = e.target.closest('div#menu-btn');
+                    mobileMenu.classList.toggle('menu-opened');
+                    document.querySelector('html').classList.toggle('open');
+
+                    if (mobileMenu.classList.contains('menu-opened')) {
+                        document.querySelector('.ac-gn-list').style.height = `${window.innerHeight - 50}px`;
+                    } else {
+                        document.querySelector('.ac-gn-list').style.height = 'auto';
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>
