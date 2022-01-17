@@ -384,11 +384,15 @@ table tbody tr:nth-child(even) {background:#f8f8f9}
 .separation.btn-orange {background-color:#ffb444; font-size: 12px}
 .url-row {color:#4c6fff; margin-top:0px; margin-bottom:8px}
 .row-num {width:5%}
-.row-gb {width:100px}
+.row-gb {width:9%}
 .row-site {width:200px}
 .row-lang {width:30%}
+
+.row-department {width:15%}
 
 .url-title-row {font-size:14px}
 @media (max-width:1070px) {
     table {width: 1070px !important}
 }
+
+.url-title-row::after {content:""; background:url(../images/ico-url.svg) no-repeat 0 0; display:inline-block; width:9px; height:9px; vertical-align:text-top; margin:2px 0 0 5px}
