@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="cache-control" content="no-store,max-age=0" />
+        <meta name="robots" content="noindex" />
+        <title>전 세계 복음 콘텐츠 현황</title>
+        <script type="text/javascript" src="./scripts/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="./scripts/headroom/headroom.js"></script>
+        <script type="text/javascript" src="./scripts/headroom/headroom.min.js"></script>
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/font.css" />
+        <link rel="stylesheet" href="./css/header.css" />
+        <link rel="stylesheet" href="./css/nav.css" />
+        <link rel="stylesheet" href="./css/common.css" />
+        <style>
+            .google-list {
+                border: 1px solid red;
+            }
+        </style>
+    </head>
+    <body class="dark">
+        <header class="ac-nav-overlap headroom headroom--top headroom--not-bottom">
+            <nav id="ac-globalnav">
+                <div class="ac-gn-content">
+                    <a class="logo">Online Contents Status</a>
+                    <div id="menu-btn">
+                        <div class="ico-menu-inner"></div>
+                    </div>
+                    <div class="ac-gn-list">
+                        <ul class="ac-gn-inner">
+                            <li class="ac-gn-item ac-gn-item-menu">
+                                <a href="">구글 검색 결과</a>
+                            </li>
+                            <li class="ac-gn-item ac-gn-item-menu">
+                                <span class="submenu-button"></span>
+                                <a href="">콘텐츠 현황</a>
+                                <ul class="sub-menu">
+                                    <li><a href="">웹사이트</a></li>
+                                    <li><a href="">유튜브</a></li>
+                                    <li><a href="">구글 비즈니스 프로필</a></li>
+                                    <li><a href="">SNS</a></li>
+                                    <li><a href="">국가 홈페이지</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <article>
+            <div class="visual part-b-2x">
+                <div class="container part-t">
+                    <div class="head-text">
+                        <h1 class="tx45">구글 검색 결과</h1>
+                        <p>
+                            테스트11<br />
+                            미디어 및 콘텐츠를 한 눈에 볼 수 있습니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container part-t google-list">
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>하나님의교회 세계복음선교협회</th>
+                            <th>하나님의교회</th>
+                            <th>아버지 함자</th>
+                            <th>어머니 하나님</th>
+                            <th>어머니 함자</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>대한민국 한국어</td>
+                            <td><a href="">링크1</a></td>
+                            <td><a href="">링크2</a></td>
+                            <td><a href="">링크3</a></td>
+                            <td><a href="">링크4</a></td>
+                            <td><a href="">링크5</a></td>
+                        </tr>
+                        <tr>
+                            <td>미국 영어</td>
+                            <td><a href="">링크1</a></td>
+                            <td><a href="">링크2</a></td>
+                            <td><a href="">링크3</a></td>
+                            <td><a href="">링크4</a></td>
+                            <td><a href="">링크5</a></td>
+                        </tr>
+                        <tr>
+                            <td>페루 스페인어</td>
+                            <td><a href="">링크1</a></td>
+                            <td><a href="">링크2</a></td>
+                            <td><a href="">링크3</a></td>
+                            <td><a href="">링크4</a></td>
+                            <td><a href="">링크5</a></td>
+                        </tr>
+                        <tr>
+                            <td>홍콩 중국어</td>
+                            <td><a href="">링크1</a></td>
+                            <td><a href="">링크2</a></td>
+                            <td><a href="">링크3</a></td>
+                            <td><a href="">링크4</a></td>
+                            <td><a href="">링크5</a></td>
+                        </tr>
+                        <tr>
+                            <td>인도 힌디어</td>
+                            <td><a href="">링크1</a></td>
+                            <td><a href="">링크2</a></td>
+                            <td><a href="">링크3</a></td>
+                            <td><a href="">링크4</a></td>
+                            <td><a href="">링크5</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </article>
+
+        <script>
+            window.addEventListener('DOMContentLoaded', () => {
+                //headroom
+                let Header = document.querySelector('header');
+                let headroom = new Headroom(Header, {
+                    offset: 35,
+                    tolerance: 5,
+                });
+                headroom.init();
+
+                // Mobile menu
+                document.querySelector('#menu-btn').addEventListener('click', (e) => {
+                    const mobileMenu = e.target.closest('div#menu-btn');
+                    mobileMenu.classList.toggle('menu-opened');
+                    document.querySelector('html').classList.toggle('open');
+
+                    if (mobileMenu.classList.contains('menu-opened')) {
+                        document.querySelector('.ac-gn-list').style.height = `${window.innerHeight - 50}px`;
+                    } else {
+                        document.querySelector('.ac-gn-list').style.height = 'auto';
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>
