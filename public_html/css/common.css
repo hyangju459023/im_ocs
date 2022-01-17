@@ -352,7 +352,7 @@ option {
 
 .table-tab {display:inline-flex; padding-bottom:10px}
 .table-tab a {margin-right:10px}
-
+.table-tab .current {color:#4c6fff}
 /*search bar*/
 .search-ui {width:100%}
 .search-ui input {border:1px solid #e2e2e2; border-radius:4px; width:100%}
