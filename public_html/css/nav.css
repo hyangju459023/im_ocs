@@ -64,12 +64,12 @@
 #menu-btn.menu-opened ~ .ac-gn-list {height:854px; visibility:visible; -webkit-transition-delay:0s; transition-delay:0s}
 #menu-btn.menu-opened ~ .ac-gn-list .ac-gn-item {opacity:1; pointer-events:auto; -webkit-transform:none; -ms-transform:none; transform:none}
 
-header .logo {font-weight:600; letter-spacing:-0.04em; font-size:19px; padding:8px 6px}
+header .logo {font-weight:600; letter-spacing:-0.04em; font-size:19px; padding:13px 6px 8px 15px}
 header .logo .tx-s {font-size:13px; font-weight:500; position:relative; top:-1px}
 
 #menu-btn .ico-menu-inner,
 #menu-btn .ico-menu-inner:after,
-#menu-btn .ico-menu-inner:before {background-color:#fff}
+#menu-btn .ico-menu-inner:before {background:#fff}
 header .logo,
 header .logo > * {color:#fff}
 header .logo span {color:#405fb7}
