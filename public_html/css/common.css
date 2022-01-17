@@ -359,25 +359,28 @@ option {
 .search-ui .search-btn-result {display:inline-block; position:absolute; right:20px}
 
 /*table*/
+table{width:100%; table-layout:fixed}
 table tbody td{padding:8px 3px}
-.google-list{clear:both}
-.google-list table{width:100%; table-layout:fixed}
-.google-list table thead{background:#f8f8f9; border:1px solid #E3E3E3; border-top:2px solid; font-size:13px}
-.google-list table thead th{font-weight:600; padding:10px 0; text-align:center; vertical-align:top}
-.google-list table tbody{font-size:13px; border:1px solid #E3E3E3}
-.google-list table tbody td{padding:8px 3px; vertical-align:top; text-align:center}
+table thead{background:#f8f8f9; border:1px solid #E3E3E3; border-top:2px solid; font-size:13px}
+table thead th{font-weight:600; padding:10px 0; text-align:left; vertical-align:middle}
+table tbody{font-size:13px; border:1px solid #E3E3E3}
+table tbody td{padding:8px 3px; vertical-align:top; text-align:left}
+table tbody tr:nth-child(even){background:#f8f8f9}
+
+.google-list,
+.website-list {clear:both; overflow-x:auto}
+.google-list table thead th,
+.google-list table tbody td{text-align:center;}
 .google-list table tbody td span{color:#333}
 .google-list table tbody td:first-child{text-align:left}
-.google-list table tbody tr:nth-child(even){background:#f8f8f9}
 .google-list table tbody .pw-reple-title:hover a,
 .google-list table tbody .pw-title:hover > a{cursor:pointer; color:#157EFB}
 
-.website-list {overflow-x:auto}
-.website-list table {width:1200px}
-.website-list table thead {border-bottom:1px solid #999}
-.website-list table th {font-weight:bold; padding-bottom:11px}
-.website-list table tr:nth-child(even) {background-color:#fafafa}
 .separation {color:#fff; padding:5px 10px; border-radius:4px}
 .separation.btn-green {background-color:#00ca70}
 .separation.btn-orange {background-color:#ffb444}
 .url-row {color:#4c6fff; margin-top:0px; margin-bottom:8px}
+.row-num {width:5%}
+.row-gb {width:100px}
+.row-site {width:200px}
+.row-lang {width:30%}
