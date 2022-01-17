@@ -34,7 +34,7 @@
     #ac-globalnav .ac-gn-item {width:auto}
     #ac-globalnav .ac-gn-list .ac-gn-inner li a {color:#fff}
     .dark #ac-globalnav .ac-gn-list .ac-gn-inner li a {color:#333 !important}
-    #ac-globalnav .ac-gn-list .ac-gn-inner .sub-menu li a {color:#fff; white-space:pre}
+    #ac-globalnav .ac-gn-list .ac-gn-inner .sub-menu li a {color:#fff !important; white-space:pre}
     #ac-globalnav .ac-gn-list .ac-gn-inner li.user {padding-top:0}
     #ac-globalnav .ac-gn-list .ac-gn-inner li.user > *,
     #ac-globalnav .ac-gn-list .ac-gn-inner > li:last-child a {padding:8px 7px}
@@ -74,13 +74,6 @@ header .logo,
 header .logo > * {color:#fff}
 header .logo span {color:#405fb7}
 header .logo .tx-s {color:#fff}
-
-.dark header .logo,
-.dark header .logo > * {color:#222 !important}
-.dark #menu-btn .ico-menu-inner,
-.dark #menu-btn .ico-menu-inner:after,
-.dark #menu-btn .ico-menu-inner:before {background-color:#333}
-.dark header .logo .tx-s {color:#222 !important}
 
 @media (min-width:768px) {
     header .logo {font-size:22px}
@@ -125,3 +118,11 @@ header {position:fixed; top:0; right:0; left:0; z-index:9999; height:54px; z-ind
     .submenu-btn:after {display:none}
     #ac-globalnav .ac-gn-list .ac-gn-inner .sub-menu li {padding-left:10px; padding-right:10px}
 }
+
+.dark header .logo,
+.dark header .logo > * {color:#222 !important}
+.dark #menu-btn .ico-menu-inner,
+.dark #menu-btn .ico-menu-inner:after,
+.dark #menu-btn .ico-menu-inner:before {background-color:#333}
+.dark header .logo .tx-s {color:#222 !important}
+.dark .headroom--pinned {transform:translateY(0); background-color:#fff}
