@@ -4,9 +4,9 @@
 h1,h2,h3,h4,h5,h6,
 .logo,
 .ac-gn-list a,
-.post-write input, 
+.post-write input{font-family:'NanumSquare','Apple SD Gothic Neo','Malgun Gothic','맑은 고딕','돋움',dotum,Helvetica,sans-serif !important}
 table tr th, 
-table tr td{font-family:'NanumSquare','Apple SD Gothic Neo','Malgun Gothic','맑은 고딕','돋움',dotum,Helvetica,sans-serif !important}
+table tr td{font-family:'Apple SD Gothic Neo','Malgun Gothic','맑은 고딕','돋움',dotum,Helvetica,sans-serif !important}
 #ac-globalnav .ac-gn-list .ac-gn-inner li.user > *, 
 #ac-globalnav .ac-gn-list .ac-gn-inner li:last-child a,
 p,header .logo .tx-s, .title, .tx19, button, .edu-menu, div, span, .edu-li .info h4, .post-write textarea, #fileBtn, .best-comment h4{font-family:'Roboto','notokr' !important}

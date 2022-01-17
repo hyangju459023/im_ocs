@@ -18,15 +18,17 @@
             .google-list{clear:both}
             .google-list table{width:100%; table-layout:fixed}
             .google-list table thead{background:#f8f8f9; border:1px solid #E3E3E3; border-top:2px solid; font-size:13px}
-            .google-list table thead th{font-weight:600; padding:10px 0; text-align:left; vertical-align:top}
+            .google-list table thead th{font-weight:600; padding:10px 0; text-align:center; vertical-align:top}
             .google-list table tbody{font-size:13px; border:1px solid #E3E3E3}
-            .google-list table tbody td{padding:8px 3px; vertical-align:top}
+            .google-list table tbody td{padding:8px 3px; vertical-align:top; text-align:center;}
+            .google-list table tbody td span{color:#333;}
+            .google-list table tbody td:first-child{text-align:left;}
             .google-list table tbody tr:nth-child(even){background:#f8f8f9}
             .google-list table tbody .pw-reple-title:hover a,
             .google-list table tbody .pw-title:hover > a{cursor:pointer; color:#157EFB}
         </style>
     </head>
-    <body class="light">
+    <body>
         <header class="ac-nav-overlap headroom headroom--top headroom--not-bottom">
             <nav id="ac-globalnav">
                 <div class="ac-gn-content">
@@ -60,12 +62,6 @@
             <div class="part-tb-2x visual">
                 <div class="container">
                     <h1 class="page-title part-b">구글 검색 결과</h1>
-                    <div class="contents-btn-wrap tx17">
-                        <a href="">웹사이트</a>
-                        <a href="">유튜브</a>
-                        <a href="">구글 비즈니스 프로필</a>
-                        <a href="">SNS</a>
-                    </div>
                 </div>
             </div>
 
@@ -83,7 +79,7 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>대한민국 한국어</td>
+                            <td>대한민국<span>한국어</span></td>
                             <td><a href="">링크1</a></td>
                             <td><a href="">링크2</a></td>
                             <td><a href="">링크3</a></td>
@@ -91,7 +87,7 @@
                             <td><a href="">링크5</a></td>
                         </tr>
                         <tr>
-                            <td>미국 영어</td>
+                            <td>미국<span>영어</span></td>
                             <td><a href="">링크1</a></td>
                             <td><a href="">링크2</a></td>
                             <td><a href="">링크3</a></td>
@@ -99,7 +95,7 @@
                             <td><a href="">링크5</a></td>
                         </tr>
                         <tr>
-                            <td>페루 스페인어</td>
+                            <td>페루<span>스페인어</span></td>
                             <td><a href="">링크1</a></td>
                             <td><a href="">링크2</a></td>
                             <td><a href="">링크3</a></td>
@@ -107,7 +103,7 @@
                             <td><a href="">링크5</a></td>
                         </tr>
                         <tr>
-                            <td>홍콩 중국어</td>
+                            <td>홍콩<span>중국어</span></td>
                             <td><a href="">링크1</a></td>
                             <td><a href="">링크2</a></td>
                             <td><a href="">링크3</a></td>
@@ -115,7 +111,7 @@
                             <td><a href="">링크5</a></td>
                         </tr>
                         <tr>
-                            <td>인도 힌디어</td>
+                            <td>인도<span>힌디어</span></td>
                             <td><a href="">링크1</a></td>
                             <td><a href="">링크2</a></td>
                             <td><a href="">링크3</a></td>

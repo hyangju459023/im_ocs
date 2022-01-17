@@ -101,7 +101,7 @@ html.open body {height:100%; overflow:hidden}
 header {position:fixed; top:0; right:0; left:0; z-index:9999; height:54px; z-index:100}
 .header--fixed {z-index:999; right:0; left:0; top:0}
 .headroom {transition:transform 0.25s ease-in-out; will-change:transform}
-.headroom--pinned {transform:translateY(0); background-color:#fff}
+.headroom--pinned {transform:translateY(0); background-color:#222}
 .headroom--unpinned {transform:translateY(-100%)}
 
 @media (min-width:1070px) {
