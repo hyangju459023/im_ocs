@@ -193,7 +193,7 @@ p      {font-size:16px; margin-top:7px; line-height:1.7; font-weight:400}
 .color-bar.green {position:relative; background:#00CA70;}
 .color-bar.orange {position:absolute;top:0;right:0;background:#FFB444;width:50%;}
 
-@media(min-width:768px) {
+@media(min-width:600px) {
     .contents-wrap {display:flex; flex-wrap:wrap; margin-left: -10px; margin-right:-10px;}
     .contents-wrap .item {width:50%;}
     .contents-wrap .item a {margin:10px}
