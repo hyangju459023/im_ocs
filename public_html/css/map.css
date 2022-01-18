@@ -1,266 +1,58 @@
-.map-container {
-	padding: 3.2rem 0.8rem;
-	position: relative;
-	display: inline-block;
-}
+.map-container {padding:3.2rem 0.8rem; position:relative; display:inline-block}
 
-.map-container img {
-	width: 100%;
-	opacity: 0.3;
-	-webkit-filter: grayscale(100%);
-}
+.map-container img {width:100%; opacity:0.3; -webkit-filter:grayscale(100%)}
 
-.map-container .point {
-	cursor: pointer;
-	position: absolute;
-	width: 0.5rem;
-	height: 0.5rem;
-	background-color: #0284ff;
-	border-radius: 50%;
-	transition: all 0.3s ease;
-	will-change: transform, box-shadow;
-	transform: translate(-50%, -50%);
-	box-shadow: 0 0 0 rgba(0, 172, 193, 0.4);
-	animation: pulse 3s infinite;
-}
+.map-container .point {cursor:pointer; position:absolute; width:0.5rem; height:0.5rem; background-color:#0284ff; border-radius:50%; transition:all 0.3s ease; will-change:transform, box-shadow; transform:translate(-50%, -50%); box-shadow:0 0 0 rgba(0, 172, 193, 0.4); animation:pulse 3s infinite}
 
-.map-container .point:hover {
-	animation: none;
-	transform: translate(-50%, -50%) scale3D(1.35, 1.35, 1);
-	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-}
+.map-container .point:hover {animation:none; transform:translate(-50%, -50%) scale3D(1.35, 1.35, 1); box-shadow:0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23)}
 
-.map-container .hk {
-	top: 42%;
-	left: 80%;
-}
-
-.map-container .india {
-	top: 49%;
-	left: 69%;
-}
-
-.map-container .india2 {
-	top: 45%;
-	left: 68%;
-}
-
-.map-container .indonesia {
-	top: 58%;
-	left: 81%;
-}
-
-.map-container .japan {
-	top: 34%;
-	left: 86%;
-}
-
-.map-container .macau {
-	top: 45%;
-	left: 78%;
-}
-
-.map-container .ph {
-	top: 51%;
-	left: 84%;
-}
-
-.map-container .sg {
-	top: 61%;
-	left: 77%;
-}
-
-.map-container .taiwan {
-	top: 43%;
-	left: 84%;
-}
-
-.map-container .mongolia {
-	top: 26%;
-	left: 74%;
-}
-
-.map-container .finland {
-	top: 20%;
-	left: 52%;
-}
-
-.map-container .france {
-	top: 26%;
-	left: 45%;
-}
-
-.map-container .germany {
-	top: 24%;
-	left: 47%;
-}
-
-.map-container .greece {
-	top: 33%;
-	left: 52%;
-}
-
-.map-container .czech {
-	top: 28%;
-	left: 49%;
-}
-
-.map-container .romania {
-	top: 30%;
-	left: 51%;
-}
-
-.map-container .sweden {
-	top: 17%;
-	left: 49%;
-}
-
-.map-container .spain {
-	top: 34%;
-	left: 42%;
-}
-
-.map-container .uk {
-	top: 23%;
-	left: 44%;
-}
-
-.map-container .brasil {
-	top: 64%;
-	left: 28%;
-}
-
-.map-container .peru {
-	top: 66%;
-	left: 21%;
-}
-
-.map-container .mexico {
-	top: 42%;
-	left: 12%;
-}
-
-.map-container .guatemala {
-	top: 44%;
-	left: 16%;
-}
-
-.map-container .panama {
-	top: 53%;
-	left: 20%;
-}
-
-.map-container .elsalvador {
-	top: 47%;
-	left: 11%;
-}
-
-.map-container .nicaragua {
-	top: 47%;
-	left: 17%;
-}
-
-.map-container .costarica {
-	top: 50%;
-	left: 18%;
-}
-
-.map-container .chile {
-	top: 73%;
-	left: 23%;
-}
-
-.map-container .oceania {
-	top: 72%;
-	left: 86%;
-}
-
-.map-container .newzealand {
-	top: 85%;
-	left: 93%;
-}
-
-.map-container .southafrica {
-	top: 75%;
-	left: 52%;
-}
-
-.map-container .usa {
-	top: 30%;
-	left: 24%;
-}
-
-.map-container .newyork {
-	top: 32%;
-	left: 23%;
-}
-
-.map-container .newjersey {
-	top: 38%;
-	left: 20%;
-}
-
-.map-container .maryland {
-	top: 35%;
-	left: 18%;
-}
-
-.map-container .connecticut {
-	top: 26%;
-	left: 25%;
-}
-
-.map-container .washington {
-	top: 28%;
-	left: 25%;
-}
-
-.map-container .virginia {
-	top: 34%;
-	left: 22%;
-}
-
-.map-container .pennsylvania {
-	top: 32%;
-	left: 17%;
-}
-
-.map-container .northcarolina {
-	top: 40%;
-	left: 20%;
-}
-
-.map-container .florida {
-	top: 42%;
-	left: 20%;
-}
-
-.map-container .sd {
-	top: 37%;
-	left: 9%;
-}
-
-.map-container .sf {
-	top: 32%;
-	left: 8%;
-}
-
-.map-container .la {
-	top: 34%;
-	left: 8%;
-}
-
+.map-container .hk {top:42%; left:80%}
+.map-container .india {top:49%; left:69%}
+.map-container .india2 {top:45%; left:68%}
+.map-container .indonesia {top:58%; left:81%}
+.map-container .japan {top:34%; left:86%}
+.map-container .macau {top:45%; left:78%}
+.map-container .ph {top:51%; left:84%}
+.map-container .sg {top:61%;left:77%}
+.map-container .taiwan {top:43%;left:84%}
+.map-container .mongolia {top:26%;left:74%}
+.map-container .finland {top:20%;left:52%}
+.map-container .france {top:26%;left:45%}
+.map-container .germany {top:24%;left:47%}
+.map-container .greece {top:33%;left:52%}
+.map-container .czech {top:28%;left:49%}
+.map-container .romania {top:30%;left:51%}
+.map-container .sweden {top:17%;left:49%}
+.map-container .spain {top:34%;left:42%}
+.map-container .uk {top:23%;left:44%}
+.map-container .brasil {top:64%;left:28%}
+.map-container .peru {top:66%;left:21%}
+.map-container .mexico {top:42%;left:12%}
+.map-container .guatemala {top:44%;left:16%}
+.map-container .panama {top:53%;left:20%}
+.map-container .elsalvador {top:47%;left:11%}
+.map-container .nicaragua {top:47%;left:17%}
+.map-container .costarica {top:50%;left:18%}
+.map-container .chile {top:73%;left:23%}
+.map-container .oceania {top:72%;left:86%}
+.map-container .newzealand {top:85%;left:93%}
+.map-container .southafrica {top:75%;left:52%}
+.map-container .usa {top:30%;left:24%}
+.map-container .newyork {top:32%;left:23%}
+.map-container .newjersey {top:38%;left:20%}
+.map-container .maryland {top:35%;left:18%}
+.map-container .connecticut {top:26%;left:25%}
+.map-container .washington {top:28%;left:25%}
+.map-container .virginia {top:34%;left:22%}
+.map-container .pennsylvania {top:32%;left:17%}
+.map-container .northcarolina {top:40%;left:20%}
+.map-container .florida {top:42%;left:20%}
+.map-container .sd {top:37%;left:9%}
+.map-container .sf {top:32%;left:8%}
+.map-container .la {top:34%;left:8%}
 
 @keyframes pulse {
-	0% {
-		box-shadow: 0 0 0 0 rgba(0, 172, 193, 0.5);
-	}
-
-	70% {
-		box-shadow: 0 0 0 25px rgba(0, 172, 193, 0);
-	}
-
-	100% {
-		box-shadow: 0 0 0 0 rgba(0, 172, 193, 0);
-	}
+0% {box-shadow:0 0 0 0 rgba(0, 172, 193, 0.5)}
+70% {box-shadow:0 0 0 25px rgba(0, 172, 193, 0)}
+100% {box-shadow:0 0 0 0 rgba(0, 172, 193, 0)}
 }
