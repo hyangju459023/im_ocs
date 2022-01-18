@@ -157,9 +157,9 @@ p      {font-size:16px; margin-top:7px; line-height:1.7; font-weight:400}
 
 .box-icon {width:44px; height:44px; border-radius:15px; display:flex; align-items:center; justify-content:center; margin-right:16px;}
 .box-icon::before {width:24px; height:24px;}
-.box-icon.ico-google {background:#9a54ff;}
+.box-icon.ico-google {background:#4C6FFF;}
 .box-icon.ico-google::before {background-image:url(../images/ico-google.svg);}
-.box-icon.ico-status {background:#ff5174;}
+.box-icon.ico-status {background:#9A54FF;}
 .box-icon.ico-status::before {background-image:url(../images/ico-status.svg);}
 
 @media(min-width:1070px) {
@@ -180,15 +180,17 @@ p      {font-size:16px; margin-top:7px; line-height:1.7; font-weight:400}
 .head-sub-text div {display:flex;}
 .color-chip span {position:relative; margin-left:16px}
 .color-chip span::before {content:''; display:inline-block; width:12px; height:12px; border-radius:4px; margin-right:4px}
-.color-chip span.orange::before {background:orange}
-.color-chip span.green::before {background:green}
+.color-chip span.orange::before {background:#FFB444}
+.color-chip span.green::before {background:#00CA70}
 
 .contents-wrap {justify-content:center;}
 .contents-wrap .item a {display:block; background:#fff; padding:16px; border:1px solid #ddd; border-radius:15px; box-shadow:0 5px 15px rgba(81, 98, 164, 0.05); margin:10px 0}
+.contents-wrap .item a > span {color:#9FA2A8; font-family:'Apple SD Gothic Neo'}
 .between {display:flex; justify-content:space-between;}
-.color-bar {width:100%; height:12px; border-radius:10px;}
-.color-bar.green {position:relative; background:green;}
-.color-bar.orange {position:absolute; top:0; right:0; background:orange; width:50%; border-radius:0 10px 10px 0; border-left:3px solid #fff;}
+.between.all {margin-top:15px;}
+.color-bar {width:100%;height: 10px;}
+.color-bar.green {position:relative; background:#00CA70;}
+.color-bar.orange {position:absolute;top:0;right:0;background:#FFB444;width:50%;}
 
 @media(min-width:768px) {
     .contents-wrap {display:flex; flex-wrap:wrap; margin-left: -10px; margin-right:-10px;}
