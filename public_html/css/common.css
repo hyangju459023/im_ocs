@@ -177,7 +177,7 @@ p      {font-size:16px; margin-top:7px; line-height:1.7; font-weight:400}
 .head-sub-text {display:flex; justify-content:space-between;}
 .head-sub-text h2 {color:#222; font-weight:400;}
 .head-sub-text .ico-arrow-r::after {width:8px; height:16px; margin-left:12px;}
-.head-sub-text div {display:flex;}
+.head-sub-text div {display:flex; align-items:end;}
 .color-chip span {position:relative; margin-left:16px}
 .color-chip span::before {content:''; display:inline-block; width:12px; height:12px; border-radius:4px; margin-right:4px}
 .color-chip span.orange::before {background:#FFB444}
@@ -188,6 +188,7 @@ p      {font-size:16px; margin-top:7px; line-height:1.7; font-weight:400}
 .contents-wrap .item a > span {color:#9FA2A8; font-family:'Apple SD Gothic Neo'}
 .between {display:flex; justify-content:space-between;}
 .between.all {margin-top:15px;}
+.between .total {margin-top:-5px}
 .color-bar {width:100%;height: 10px;}
 .color-bar.green {position:relative; background:#00CA70;}
 .color-bar.orange {position:absolute;top:0;right:0;background:#FFB444;width:50%;}
