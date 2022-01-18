@@ -19,10 +19,4 @@ window.addEventListener('DOMContentLoaded', () => {
             document.querySelector('.ac-gn-list').style.height = 'auto';
         }
     });
-
-    // tippy('.tippy', {
-    //     theme: 'light',
-    //     size: 'big',
-    //     arrow: true,
-    // });
 });

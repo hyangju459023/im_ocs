@@ -193,14 +193,22 @@ p      {font-size:16px; margin-top:7px; line-height:1.7; font-weight:400}
 .color-bar.green {position:relative; background:#00CA70;}
 .color-bar.orange {position:absolute;top:0;right:0;background:#FFB444;width:50%;}
 
+.country-wrap {justify-content: left;}
+.country-wrap .item {display:block; background:#fff; padding:16px; border:1px solid #ddd; border-radius:15px; box-shadow:0 5px 15px rgba(81, 98, 164, 0.05); margin:10px 0}
+.country-wrap .item span {color:#9FA2A8; font-family:'Apple SD Gothic Neo'}
+
 @media(min-width:600px) {
-    .contents-wrap {display:flex; flex-wrap:wrap; margin-left: -10px; margin-right:-10px;}
-    .contents-wrap .item {width:50%;}
-    .contents-wrap .item a {margin:10px}
+    .contents-wrap,
+    .country-wrap {display:flex; flex-wrap:wrap; margin-left: -10px; margin-right:-10px;}
+    .contents-wrap .item,
+    .country-wrap .item {width:50%;}
+    .contents-wrap .item a,
+    .country-wrap .item {margin:10px}
 }
 
 @media(min-width:1070px) {
-    .contents-wrap .item {width:25%}
+    .contents-wrap .item,
+    .country-wrap .item {width:25%}
 }
 
 /* VISUAL */
@@ -210,10 +218,9 @@ p      {font-size:16px; margin-top:7px; line-height:1.7; font-weight:400}
 .head-text h1 {color:#222; font-weight:400; margin-top:8px}
 .head-text h1 b {font-weight:600}
 .head-text p {margin-top:8px; color:#444; line-height:1.6}
-
 .card-wrap .item {transition:all 0.2s ease}
-.scale {transition:all 0.2s ease}
 .visual .card-wrap {margin-top:16px}
+.visual-nation {background:#f5f5f5;}
 
 @media (min-width:1070px) {
     .visual .ico-chat::before {width:18px; height:18px}

@@ -1,10 +1,9 @@
-.map-container {padding:3.2rem 0.8rem; position:relative; display:inline-block}
-
-.map-container img {width:100%; opacity:0.3; -webkit-filter:grayscale(100%)}
-
-.map-container .point {cursor:pointer; position:absolute; width:0.5rem; height:0.5rem; background-color:#0284ff; border-radius:50%; transition:all 0.3s ease; will-change:transform, box-shadow; transform:translate(-50%, -50%); box-shadow:0 0 0 rgba(0, 172, 193, 0.4); animation:pulse 3s infinite}
-
-.map-container .point:hover {animation:none; transform:translate(-50%, -50%) scale3D(1.35, 1.35, 1); box-shadow:0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23)}
+.map-container {position:relative}
+.map-container img {opacity: 0.4;}
+.map-container .point {cursor:pointer;position:absolute;width:8px;height:8px;background: #626262;border-radius:10px;transition:all 0.3s ease;will-change:transform, box-shadow;transform:translate(-50%, -50%);animation:pulse 3s infinite;}
+.map-container .point:hover {animation:none; background: #4c6fff}
+.map-container .point a {position:absolute; top:5px; left:5px; width:100px}
+.map-container .point a:hover {animation:none; color:#4c6fff}
 
 .map-container .hk {top:42%; left:80%}
 .map-container .india {top:49%; left:69%}
@@ -52,7 +51,7 @@
 .map-container .la {top:34%;left:8%}
 
 @keyframes pulse {
-0% {box-shadow:0 0 0 0 rgba(0, 172, 193, 0.5)}
-70% {box-shadow:0 0 0 25px rgba(0, 172, 193, 0)}
-100% {box-shadow:0 0 0 0 rgba(0, 172, 193, 0)}
+    0% {box-shadow:0 0 0 0 rgba(0, 172, 193, 0.5)}
+    70% {box-shadow:0 0 0 25px rgba(0, 172, 193, 0)}
+    100% {box-shadow:0 0 0 0 rgba(0, 172, 193, 0)}
 }
