@@ -4,7 +4,9 @@
 .map-container .point:hover {animation:none; background: #4c6fff}
 .map-container .point a {position:absolute; top:5px; left:5px; width:100px}
 .map-container .point a:hover {animation:none; color:#4c6fff}
-
+@media (max-width:768px) {
+    .map-container .point a {display:none;}
+}
 .map-container .hk {top:42%; left:80%}
 .map-container .india {top:49%; left:69%}
 .map-container .india2 {top:45%; left:68%}

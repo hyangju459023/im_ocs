@@ -268,11 +268,6 @@ select {height:44px; border-color:#dce0e6; padding:0 30px 0 15px; background:tra
 input,
 input[type='text'],
 textarea {border:1px solid #dce0e6; min-height:35px; padding:10px; width:100%}
-/* @media (min-width:1070px) {
-    input,
-    input[type='text'],
-    textarea {min-height:50px}
-} */
 
 input,
 textarea,
@@ -296,14 +291,12 @@ option {font-size:15px}
 }
 
 .page-title {font-size:35px; text-align:center; color:#fff}
-
 .visual {background-image:url(../images/header_bg_2.webp); background-size:cover; background-position:center center}
 .contents-btn-wrap {text-align:center; font-size:14px}
 .contents-btn-wrap a {background-color:#fff; border-radius:15px; display:inline-block; width:160px; padding:14px 0px; margin:5px; box-shadow:0 15px 30px -7px rgb(0 0 0 / 30%)}
 .contents-btn-wrap .active {background:#4c6fff; color:#fff}
 .nation-btn {display:inline-block; border:1px solid #4c6fff; border-radius:5px; padding:6px 12px; font-size:14px}
 .nation-btn::after {content:''; background:url(../images/ico-right-allow.svg) no-repeat 0 0; display:inline-block; width:7px; height:13px; vertical-align:text-top; margin:1px 0 0 10px}
-
 .current {color:#4c6fff; font-weight:600}
 
 /*search bar*/
