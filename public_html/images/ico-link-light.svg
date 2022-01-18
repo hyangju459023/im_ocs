@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <g id="그룹_1236" data-name="그룹 1236" transform="translate(-519 -707)">
+    <g id="사각형_708" data-name="사각형 708" transform="translate(519 707)" fill="#fff" stroke="#4c6fff" stroke-width="1">
+      <rect width="30" height="30" rx="15" stroke="none"/>
+      <rect x="0.5" y="0.5" width="29" height="29" rx="14.5" fill="none"/>
+    </g>
+    <g id="Icon_feather-external-link" data-name="Icon feather-external-link" transform="translate(528.427 716.427)">
+      <path id="패스_1" data-name="패스 1" d="M13.788,13.335V17.05a1.238,1.238,0,0,1-1.238,1.238H5.738A1.238,1.238,0,0,1,4.5,17.05V10.238A1.238,1.238,0,0,1,5.738,9H9.454" transform="translate(-4.5 -7.142)" fill="none" stroke="#4c6fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path id="패스_2" data-name="패스 2" d="M22.5,4.5h3.715V8.215" transform="translate(-15.069 -4.5)" fill="none" stroke="#4c6fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path id="패스_3" data-name="패스 3" d="M15,11.312,21.812,4.5" transform="translate(-10.665 -4.5)" fill="none" stroke="#4c6fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    </g>
+  </g>
+</svg>

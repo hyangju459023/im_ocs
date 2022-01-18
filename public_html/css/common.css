@@ -328,6 +328,8 @@ table tbody tr:nth-child(even) {background:#f8f8f9}
 .google-list table tbody td {text-align:center;}
 .google-list table tbody td:first-child {text-align:left; position:relative; font-weight:600}
 .google-list table tbody td span {position:absolute; right:0; color:#666; font-weight:initial}
+.google-list table tbody td a::before {content:''; background:url(../images/ico-link-light.svg)center no-repeat; width:30px; height:30px; display:inline-block}
+.google-list table tbody td a:hover::before {background:url(../images/ico-link-blue.svg)center no-repeat;}
 .google-list table tbody .pw-reple-title:hover a,
 .google-list table tbody .pw-title:hover > a {cursor:pointer; color:#157EFB}
 .row-country {width:10%}
