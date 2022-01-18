@@ -20,9 +20,9 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    tippy('.tippy', {
-        theme: 'light',
-        size: 'big',
-        arrow: true,
-    });
+    // tippy('.tippy', {
+    //     theme: 'light',
+    //     size: 'big',
+    //     arrow: true,
+    // });
 });
