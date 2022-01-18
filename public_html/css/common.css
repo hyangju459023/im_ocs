@@ -158,9 +158,9 @@ p      {font-size:16px; margin-top:7px; line-height:1.7; font-weight:400}
 .box-icon {width:44px; height:44px; border-radius:15px; display:flex; align-items:center; justify-content:center; margin-right:16px;}
 .box-icon::before {width:24px; height:24px;}
 .box-icon.ico-google {background:#4C6FFF;}
-.box-icon.ico-google::before {background-image:url(../images/ico-google.svg);}
+.box-icon.ico-google::before {content:'';background:url(../images/ico-google.svg) no-repeat 0 0; width:33px; height:33px;}
 .box-icon.ico-status {background:#9A54FF;}
-.box-icon.ico-status::before {background-image:url(../images/ico-status.svg);}
+.box-icon.ico-status::before {content:''; background:url(../images/ico-status.svg) no-repeat 0 0; width:27px; height:33px;}
 
 @media(min-width:1070px) {
     .box-icon::before {width:36px; height:36px}

@@ -9,6 +9,7 @@
         <script type="text/javascript" src="../scripts/jquery-1.11.3.min.js"></script>
         <script type="text/javascript" src="../scripts/headroom/headroom.js"></script>
         <script type="text/javascript" src="../scripts/headroom/headroom.min.js"></script>
+        <script type="text/javascript" src="./common/common.js"></script>
         <link rel="stylesheet" href="../css/reset.css" />
         <link rel="stylesheet" href="../css/font.css" />
         <link rel="stylesheet" href="../css/nav.css" />
@@ -124,29 +125,5 @@
                 </table>
             </div>
         </div>
-        <script>
-            window.addEventListener('DOMContentLoaded', () => {
-                //headroom
-                let Header = document.querySelector('header');
-                let headroom = new Headroom(Header, {
-                    offset: 35,
-                    tolerance: 5,
-                });
-                headroom.init();
-
-                // Mobile menu
-                document.querySelector('#menu-btn').addEventListener('click', (e) => {
-                    const mobileMenu = e.target.closest('div#menu-btn');
-                    mobileMenu.classList.toggle('menu-opened');
-                    document.querySelector('html').classList.toggle('open');
-
-                    if (mobileMenu.classList.contains('menu-opened')) {
-                        document.querySelector('.ac-gn-list').style.height = `${window.innerHeight - 50}px`;
-                    } else {
-                        document.querySelector('.ac-gn-list').style.height = 'auto';
-                    }
-                });
-            });
-        </script>
     </body>
 </html>

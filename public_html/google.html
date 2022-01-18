@@ -9,11 +9,12 @@
         <script type="text/javascript" src="./scripts/jquery-1.11.3.min.js"></script>
         <script type="text/javascript" src="./scripts/headroom/headroom.js"></script>
         <script type="text/javascript" src="./scripts/headroom/headroom.min.js"></script>
+        <script type="text/javascript" src="./common/common.js"></script>
         <link rel="stylesheet" href="./css/reset.css" />
         <link rel="stylesheet" href="./css/font.css" />
         <link rel="stylesheet" href="./css/header.css" />
         <link rel="stylesheet" href="./css/nav.css" />
-        <link rel="stylesheet" href="./css/common.css" />   
+        <link rel="stylesheet" href="./css/common.css" />
     </head>
     <body>
         <header class="ac-nav-overlap headroom headroom--top headroom--not-bottom">
@@ -26,17 +27,17 @@
                     <div class="ac-gn-list">
                         <ul class="ac-gn-inner">
                             <li class="ac-gn-item ac-gn-item-menu">
-                                <a href="">구글 검색 결과</a>
+                                <a href="./google.html">구글 검색 결과</a>
                             </li>
                             <li class="ac-gn-item ac-gn-item-menu">
                                 <span class="submenu-button"></span>
                                 <a href="">콘텐츠 현황</a>
                                 <ul class="sub-menu">
-                                    <li><a href="">웹사이트</a></li>
-                                    <li><a href="">유튜브</a></li>
-                                    <li><a href="">구글 비즈니스 프로필</a></li>
-                                    <li><a href="">SNS</a></li>
-                                    <li><a href="">국가 홈페이지</a></li>
+                                    <li><a href="./contents/website.html">웹사이트</a></li>
+                                    <li><a href="./contents/youtube.html">유튜브</a></li>
+                                    <li><a href="./contents/profile.html">구글 비즈니스 프로필</a></li>
+                                    <li><a href="./contents/sns.html">SNS</a></li>
+                                    <li><a href="./country/">국가 홈페이지</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -57,7 +58,7 @@
                     <thead>
                         <tr>
                             <th class="row-country"></th>
-                            <th>하나님의교회<br>세계복음선교협회</th>
+                            <th>하나님의교회<br />세계복음선교협회</th>
                             <th>하나님의교회</th>
                             <th>아버지 함자</th>
                             <th>어머니 하나님</th>
@@ -109,30 +110,5 @@
                 </table>
             </div>
         </article>
-
-        <script>
-            window.addEventListener('DOMContentLoaded', () => {
-                //headroom
-                let Header = document.querySelector('header');
-                let headroom = new Headroom(Header, {
-                    offset: 35,
-                    tolerance: 5,
-                });
-                headroom.init();
-
-                // Mobile menu
-                document.querySelector('#menu-btn').addEventListener('click', (e) => {
-                    const mobileMenu = e.target.closest('div#menu-btn');
-                    mobileMenu.classList.toggle('menu-opened');
-                    document.querySelector('html').classList.toggle('open');
-
-                    if (mobileMenu.classList.contains('menu-opened')) {
-                        document.querySelector('.ac-gn-list').style.height = `${window.innerHeight - 50}px`;
-                    } else {
-                        document.querySelector('.ac-gn-list').style.height = 'auto';
-                    }
-                });
-            });
-        </script>
     </body>
 </html>
