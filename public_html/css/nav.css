@@ -84,7 +84,7 @@ header .logo .tx-s {color:#fff}
 @media (min-width:1070px) {
     #menu-btn {display:none}
     .light header .user span {color:#333}
-    header .logo {font-size:24px; padding:0}
+    header .logo {font-size:22px; padding:0}
     header .logo .tx-s {top:-3px}
 }
 
