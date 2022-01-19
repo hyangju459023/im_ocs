@@ -6,10 +6,11 @@
         <meta http-equiv="cache-control" content="no-store,max-age=0" />
         <meta name="robots" content="noindex" />
         <title>전 세계 복음 콘텐츠 현황</title>
-        <script type="text/javascript" src="../scripts/jquery-1.11.3.min.js"></script>
-        <script type="text/javascript" src="../scripts/headroom/headroom.js"></script>
-        <script type="text/javascript" src="../scripts/headroom/headroom.min.js"></script>
-        <script type="text/javascript" src="../common/common.js"></script>
+        <script src="../scripts/jquery-1.11.3.min.js"></script>
+        <script src="../scripts/headroom/headroom.js"></script>
+        <script src="../scripts/headroom/headroom.min.js"></script>
+        <script src="../common/common.js"></script>
+        <script async src="../common/filter.js"></script>
         <link rel="stylesheet" href="../css/reset.css" />
         <link rel="stylesheet" href="../css/font.css" />
         <link rel="stylesheet" href="../css/nav.css" />
@@ -65,9 +66,6 @@
             <div class="filter">
                 <div>
                     <span>
-                        <a onclick="filter.getGb(this, '')" class="gb tx18 current">전체<span class="tx17">(18)</span></a>
-                        <a onclick="filter.getGb(this, '공식')" class="gb tx18">공식<span class="tx17">(55)</span></a>
-                        <a onclick="filter.getGb(this, '비공식')" class="gb tx18">비공식<span class="tx17">(150)</span></a>
                     </span>
                 </div>
                 <div class="search-item">
@@ -92,7 +90,7 @@
                             <td>18</td>
                             <td>
                                 <a href="https://ko.wikipedia.org/wiki/%ED%95%98%EB%82%98%EB%8B%98%EC%9D%98%EA%B5%90%ED%9A%8C_%EC%84%B8%EA%B3%84%EB%B3%B5%EC%9D%8C%EC%84%A0%EA%B5%90%ED%98%91%ED%9A%8C" target="_blank">
-                                    <span class="url-title-row tx16 fw600">공식 하나님의교회 세계복음선교협회</span>
+                                    <span class="url-title-row tx16 fw600">하나님의교회 세계복음선교협회</span>
                                 </a>
                             </td>
                             <td class="lang-row">
@@ -104,7 +102,7 @@
                             <td>17</td>
                             <td>
                                 <a href="https://ko.wikipedia.org/wiki/%EC%95%88%EC%83%81%ED%99%8D" target="_blank">
-                                    <span class="url-title-row tx16 fw600">공식 아버지 함자</span>
+                                    <span class="url-title-row tx16 fw600">아버지 함자</span>
                                 </a>
                             </td>
                             <td class="lang-row">
@@ -310,59 +308,6 @@
         </div>
 
         <script>
-            class Filter {
-                constructor() {
-                    this.init();
-                }
-
-                // 초기화
-                init() {
-                    this.searchInput = document.querySelector('#searchInput');
-                    this.dataList = document.querySelectorAll('table tbody tr');
-                    this.gb = document.querySelectorAll('.gb');
-                    this.gbType = '';
-                }
-
-                // 구분
-                getGb(item, gbType) {
-                    // class에 current 처리
-                    if (item) {
-                        this.searchInput.value = ''; // 검색 초기화
-                        this.gbType = gbType;
-                        this.gb.forEach((e) => {
-                            e.classList.remove('current');
-                        });
-                        item.classList.add('current');
-                    }
-
-                    // 전체, 공식, 비공식
-                    this.dataList.forEach((e) => {
-                        // 전체인 경우
-                        if (this.gbType == '') {
-                            e.style.display = 'table-row';
-                        }
-                        // 공식, 비공식인 경우
-                        else {
-                            if (e.children[1].innerText.indexOf(this.gbType) > -1) e.style.display = 'table-row';
-                            else e.style.display = 'none';
-                        }
-                    });
-                }
-
-                // 검색
-                getSearch() {
-                    let input = this.searchInput.value;
-                    input = input.toLowerCase().replace(/ /g, '');
-
-                    if (input) {
-                        this.dataList.forEach((e) => {
-                            if (this.gbType != '') e.style.display = e.children[1].innerText.indexOf(this.gbType) > -1 && e.innerText.indexOf(input) > -1 ? 'table-row' : 'none';
-                            else e.style.display = e.innerText.indexOf(input) > -1 ? 'table-row' : 'none';
-                        });
-                    } else this.getGb(null, this.gbType);
-                }
-            }
-
             const filter = new Filter();
         </script>
     </body>

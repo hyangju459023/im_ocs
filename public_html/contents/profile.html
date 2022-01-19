@@ -6,10 +6,11 @@
         <meta http-equiv="cache-control" content="no-store,max-age=0" />
         <meta name="robots" content="noindex" />
         <title>전 세계 복음 콘텐츠 현황</title>
-        <script type="text/javascript" src="../scripts/jquery-1.11.3.min.js"></script>
-        <script type="text/javascript" src="../scripts/headroom/headroom.js"></script>
-        <script type="text/javascript" src="../scripts/headroom/headroom.min.js"></script>
-        <script type="text/javascript" src="../common/common.js"></script>
+        <script src="../scripts/jquery-1.11.3.min.js"></script>
+        <script src="../scripts/headroom/headroom.js"></script>
+        <script src="../scripts/headroom/headroom.min.js"></script>
+        <script src="../common/common.js"></script>
+        <script async src="../common/filter.js"></script>
         <link rel="stylesheet" href="../css/reset.css" />
         <link rel="stylesheet" href="../css/font.css" />
         <link rel="stylesheet" href="../css/nav.css" />
@@ -66,13 +67,13 @@
             <div class="filter">
                 <div>
                     <span>
-                        <a class="tx18 current">전체<span class="tx17">(205)</span></a>
-                        <a class="tx18" href="#">인증<span class="tx17">(55)</span></a>
-                        <a class="tx18" href="#">미인증<span class="tx17">(150)</span></a>
+                        <a onclick="filter.getGb(this, '')" class="gb tx18 current">전체(195)</a>
+                        <a onclick="filter.getGb(this, '1')" class="gb tx18">인증(46)</a>
+                        <a onclick="filter.getGb(this, '2')" class="gb tx18">미인증(149)</a>
                     </span>
                 </div>
                 <div class="search-item">
-                    <input type="text" placeholder="검색어 입력" />
+                    <input type="text" id="searchInput" placeholder="검색어 입력" onkeyup="filter.getSearch();" />
                     <span class="ico-search"></span>
                 </div>
             </div>
@@ -123,5 +124,8 @@
                 </table>
             </div>
         </div>
+        <script>
+            const filter = new Filter();
+        </script>
     </body>
 </html>

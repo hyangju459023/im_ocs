@@ -19,13 +19,4 @@ window.addEventListener('DOMContentLoaded', () => {
             document.querySelector('.ac-gn-list').style.height = 'auto';
         }
     });
-
-    //Search
-    $("#keyword").keyup(function(){
-        const searchData = $("#keyword").val();
-        const search = searchData.toLowerCase().replace(/ /g, '');
-        $("table tbody tr").css("display", "none");
-        const temp = $("table tbody tr:contains('" + search + "')");
-        $(temp).css("display", "block");
-    })
 });

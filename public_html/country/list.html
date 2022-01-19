@@ -201,7 +201,7 @@
                         </span>
                     </div>
                     <div class="search-item">
-                        <input type="text" placeholder="검색어 입력" />
+                        <input type="text" id="searchInput" placeholder="검색어 입력" onkeyup="filter.getSearch();" />
                         <span class="ico-search"></span>
                     </div>
                 </div>
@@ -326,5 +326,8 @@
                 </div>
             </div>
         </article>
+        <script>
+            const filter = new Filter();
+        </script>
     </body>
 </html>
