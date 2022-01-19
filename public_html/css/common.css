@@ -323,7 +323,7 @@ table tbody td {padding:8px 3px; vertical-align:top; text-align:left}
 table tbody tr:nth-child(even) {background:#f8f8f9}
 
 .google-list,
-.website-list {clear:both; overflow-x:auto}
+.website-list {clear:both; overflow-x:scroll}
 .google-list table thead th,
 .google-list table tbody td {text-align:center;}
 .google-list table tbody td:first-child {text-align:left; position:relative; font-weight:600}
