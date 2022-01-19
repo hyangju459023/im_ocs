@@ -1,8 +1,8 @@
 .map-container {position:relative}
 .map-container img {opacity: 0.4;}
-.map-container .point {cursor:pointer;position:absolute;width:8px;height:8px;background: #626262;border-radius:10px;transition:all 0.3s ease;will-change:transform, box-shadow;transform:translate(-50%, -50%);animation:pulse 3s infinite;}
+.map-container .point {cursor:pointer;position:absolute;width:8px;height:8px;background: #75bdc7;border-radius:10px;transition:all 0.3s ease;will-change:transform, box-shadow;transform:translate(-50%, -50%);animation:pulse 3s infinite;}
 .map-container .point:hover {animation:none; background: #4c6fff}
-.map-container .point a {position:absolute; top:5px; left:5px; width:100px}
+.map-container .point a {position:absolute; top:5px; left:5px; width:100px; font-size:12px;}
 .map-container .point a:hover {animation:none; color:#4c6fff}
 @media (max-width:768px) {
     .map-container .point a {display:none;}
@@ -14,40 +14,40 @@
 .map-container .japan {top:34%; left:86%}
 .map-container .macau {top:45%; left:78%}
 .map-container .ph {top:51%; left:84%}
-.map-container .sg {top:61%;left:77%}
+.map-container .sg {top: 60%;left: 78%;}
 .map-container .taiwan {top:43%;left:84%}
 .map-container .mongolia {top:26%;left:74%}
 .map-container .finland {top:20%;left:52%}
 .map-container .france {top:26%;left:45%}
-.map-container .germany {top:24%;left:47%}
-.map-container .greece {top:33%;left:52%}
+.map-container .germany {top:24%;left: 47%;}
+.map-container .greece {top: 30%;left: 52%;}
 .map-container .czech {top:28%;left:49%}
-.map-container .romania {top:30%;left:51%}
+.map-container .romania {top: 26%;left: 52%;}
 .map-container .sweden {top:17%;left:49%}
-.map-container .spain {top:34%;left:42%}
-.map-container .uk {top:23%;left:44%}
+.map-container .spain {top: 29%;left: 43%;}
+.map-container .uk {top:23%;left: 44%;}
 .map-container .brasil {top:64%;left:28%}
-.map-container .peru {top:66%;left:21%}
-.map-container .mexico {top:42%;left:12%}
+.map-container .peru {top:66%;left: 19%;}
+.map-container .mexico {top: 41%;left: 12%;}
 .map-container .guatemala {top:44%;left:16%}
 .map-container .panama {top:53%;left:20%}
-.map-container .elsalvador {top:47%;left:11%}
-.map-container .nicaragua {top:47%;left:17%}
-.map-container .costarica {top:50%;left:18%}
-.map-container .chile {top:73%;left:23%}
+.map-container .elsalvador {top: 44%;left:11%;}
+.map-container .nicaragua {top:47%;left: 16%;}
+.map-container .costarica {top:50%;left: 17%;}
+.map-container .chile {top:73%;left: 22%;}
 .map-container .oceania {top:72%;left:86%}
-.map-container .newzealand {top:85%;left:93%}
+.map-container .newzealand {top:87%;left:98%}
 .map-container .southafrica {top:75%;left:52%}
-.map-container .usa {top:30%;left:24%}
-.map-container .newyork {top:32%;left:23%}
-.map-container .newjersey {top:38%;left:20%}
-.map-container .maryland {top:35%;left:18%}
-.map-container .connecticut {top:26%;left:25%}
-.map-container .washington {top:28%;left:25%}
-.map-container .virginia {top:34%;left:22%}
-.map-container .pennsylvania {top:32%;left:17%}
-.map-container .northcarolina {top:40%;left:20%}
-.map-container .florida {top:42%;left:20%}
+.map-container .usa {top: 25%;left: 22%;}
+.map-container .newyork {top:28%;left:22%}
+.map-container .newjersey {top: 34%;left: 17%;}
+.map-container .maryland {top: 33%;left: 19%;}
+.map-container .connecticut {top: 20%;left: 25%;}
+.map-container .washington {top: 22%;left:24%;}
+.map-container .virginia {top:31%;left: 20%;}
+.map-container .pennsylvania {top:28%;left:16%}
+.map-container .northcarolina {top: 37%;left: 19%;}
+.map-container .florida {top: 40%;left: 19%;}
 .map-container .sd {top:37%;left:9%}
 .map-container .sf {top:32%;left:8%}
 .map-container .la {top:34%;left:8%}
