@@ -60,9 +60,8 @@
             </div>
         </div>
 
-        <!--내용시작-->
         <div class="container part-tb list-wrap">
-            <!--전체/공식/비공식, 검색창-->
+            <!-- 필터링 -->
             <div class="filter">
                 <div>
                     <span>
@@ -70,12 +69,12 @@
                     </span>
                 </div>
                 <div class="search-item">
-                    <input type="text" placeholder="검색어를 입력하세요" value="" />
+                    <input type="text" id="searchText" placeholder="문서명으로 검색" />
                     <span class="ico-search"></span>
                 </div>
             </div>
 
-            <!-- 표, 테이블 -->
+            <!-- 목록 -->
             <div class="website-list">
                 <table>
                     <thead class="table-head tx16">
@@ -90,20 +89,12 @@
                         <tr>
                             <td>18</td>
                             <td>
-                                <a
-                                    href="https://ko.wikipedia.org/wiki/%ED%95%98%EB%82%98%EB%8B%98%EC%9D%98%EA%B5%90%ED%9A%8C_%EC%84%B8%EA%B3%84%EB%B3%B5%EC%9D%8C%EC%84%A0%EA%B5%90%ED%98%91%ED%9A%8C"
-                                    target="_blank"
-                                >
+                                <a href="https://ko.wikipedia.org/wiki/%ED%95%98%EB%82%98%EB%8B%98%EC%9D%98%EA%B5%90%ED%9A%8C_%EC%84%B8%EA%B3%84%EB%B3%B5%EC%9D%8C%EC%84%A0%EA%B5%90%ED%98%91%ED%9A%8C" target="_blank">
                                     <span class="url-title-row tx16 fw600">하나님의교회 세계복음선교협회</span>
                                 </a>
                             </td>
                             <td class="lang-row">
-                                <a
-                                    class="tx12"
-                                    href="https://ko.wikipedia.org/wiki/%ED%95%98%EB%82%98%EB%8B%98%EC%9D%98%EA%B5%90%ED%9A%8C_%EC%84%B8%EA%B3%84%EB%B3%B5%EC%9D%8C%EC%84%A0%EA%B5%90%ED%98%91%ED%9A%8C"
-                                    target="_blank"
-                                    >한국어</a
-                                >
+                                <a class="tx12" href="https://ko.wikipedia.org/wiki/%ED%95%98%EB%82%98%EB%8B%98%EC%9D%98%EA%B5%90%ED%9A%8C_%EC%84%B8%EA%B3%84%EB%B3%B5%EC%9D%8C%EC%84%A0%EA%B5%90%ED%98%91%ED%9A%8C" target="_blank">한국어</a>
                             </td>
                             <td></td>
                         </tr>
@@ -139,12 +130,7 @@
                                 </a>
                             </td>
                             <td class="lang-row">
-                                <a
-                                    class="tx12"
-                                    href="https://ko.wikipedia.org/wiki/%ED%95%98%EB%82%98%EB%8B%98%EC%9D%98%EA%B5%90%ED%9A%8C_%EC%98%88%EC%88%98%EC%A6%9D%EC%9D%B8%ED%9A%8C"
-                                    target="_blank"
-                                    >한국어</a
-                                >
+                                <a class="tx12" href="https://ko.wikipedia.org/wiki/%ED%95%98%EB%82%98%EB%8B%98%EC%9D%98%EA%B5%90%ED%9A%8C_%EC%98%88%EC%88%98%EC%A6%9D%EC%9D%B8%ED%9A%8C" target="_blank">한국어</a>
                             </td>
                             <td></td>
                         </tr>
@@ -320,5 +306,21 @@
                 </table>
             </div>
         </div>
+        <script>
+            document.querySelector('#searchText').addEventListener('keyup', (event) => {
+                // const searchText = $("#keyword").val();
+                // const search = searchText.toLowerCase().replace(/ /g, '');
+                // $("table tbody tr").css("display", "none");
+                // const temp = $("table tbody tr:contains('" + search + "')");
+                // $(temp).css("display", "block");
+                let searchText = event.target.value;
+                const style = searchText ? 'none' : 'table-row';
+                searchText = searchText.toLowerCase().replace(/ /g, '');
+                const trList = document.querySelectorAll('table tbody tr');
+                trList.forEach((e) => {
+                    e.style.display = style;
+                });
+            });
+        </script>
     </body>
 </html>
