@@ -347,12 +347,10 @@ table tbody tr:nth-child(even) {background:#f8f8f9}
 .row-24per {width:24%}
 .row-28per {width:28%}
 .row-32per {width:32%}
-.row-200px {width:200px}
-.row-department {width:15%}
 
-.url-title-row {font-size:14px}
 @media (max-width:1070px) {
     table {width: 1070px !important}
 }
 
+.url-title-row {font-size:14px}
 .url-title-row::after {content:""; background:url(../images/ico-url.svg) no-repeat 0 0; display:inline-block; width:9px; height:9px; vertical-align:text-top; margin:2px 0 0 5px}
