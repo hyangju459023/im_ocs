@@ -332,7 +332,6 @@ table tbody tr:nth-child(even) {background:#f8f8f9}
 .google-list table tbody td a:hover::before {background:url(../images/ico-link-blue.svg)center no-repeat;}
 .google-list table tbody .pw-reple-title:hover a,
 .google-list table tbody .pw-title:hover > a {cursor:pointer; color:#157EFB}
-.row-country {width:10%}
 
 .website-list table thead th:first-child,
 .website-list table tbody td:first-child {text-align:center}
@@ -340,11 +339,15 @@ table tbody tr:nth-child(even) {background:#f8f8f9}
 .separation.btn-green {background-color:#00ca70; font-size: 12px}
 .separation.btn-orange {background-color:#ffb444; font-size: 12px}
 .url-row {color:#4c6fff; margin-top:0px; margin-bottom:8px}
-.row-num {width:5%}
-.row-gb {width:9%}
-.row-site {width:200px}
-.row-lang {width:30%}
-
+.row-4per {width:4%}
+.row-8per {width:8%}
+.row-12per {width:12%}
+.row-16per {width:16%}
+.row-20per {width:20%}
+.row-24per {width:24%}
+.row-28per {width:28%}
+.row-32per {width:32%}
+.row-200px {width:200px}
 .row-department {width:15%}
 
 .url-title-row {font-size:14px}
