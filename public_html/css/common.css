@@ -326,8 +326,8 @@ table tbody tr:nth-child(even) {background:#f8f8f9}
 .website-list {clear:both; overflow-x:auto}
 .google-list table thead th,
 .google-list table tbody td {text-align:center}
-.google-list table tbody td:first-child {text-align:left; position:relative; font-weight:600}
-.google-list table tbody td span {position:absolute; right:0; color:#666; font-weight:initial}
+.google-list table tbody td:first-child {text-align:left; position:sticky; font-weight:600}
+.google-list table tbody td span {position:absolute; right:5px; color:#666; font-weight:initial}
 .google-list table tbody td a::before {content:''; background:url(../images/ico-link-light.svg)center no-repeat; width:30px; height:30px; display:inline-block}
 .google-list table tbody td a:hover::before {background:url(../images/ico-link-blue.svg)center no-repeat;}
 .google-list table tbody .pw-reple-title:hover a,
@@ -359,3 +359,9 @@ table tbody tr:nth-child(even) {background:#f8f8f9}
 
 .url-title-row {font-size:14px}
 .url-title-row::after {content:""; background:url(../images/ico-url.svg) no-repeat 0 0; display:inline-block; width:9px; height:9px; vertical-align:text-top; margin:2px 0 0 5px}
+
+.google-list{overflow:auto; table-layout:fixed;}
+.google-list thead th:first-child,
+.google-list tbody td:first-child{z-index:998}
+.google-list thead th:first-child,
+.google-list tbody td:first-child{position:sticky; left:0; background:#fafafb; border-right:1px solid #e3e3e3}
